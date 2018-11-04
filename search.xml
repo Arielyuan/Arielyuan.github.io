@@ -32,7 +32,12 @@
   <entry>
     <title></title>
     <url>%2Fgoogle3f41a15ca869dd02.html</url>
-    <content type="text"><![CDATA[google-site-verification: google3f41a15ca869dd02.html]]></content>
+    <content type="text"><![CDATA[layout: false google-site-verification: google3f41a15ca869dd02.html]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[about]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[categories]]></title>
@@ -42,11 +47,6 @@
   <entry>
     <title><![CDATA[tags]]></title>
     <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[about]]></title>
-    <url>%2Fabout%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
