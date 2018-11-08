@@ -35,18 +35,13 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[categories]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"><![CDATA[碎碎念]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Fbaidu_verify_EVMmPbnQOo.html</url>
-    <content type="text"><![CDATA[EVMmPbnQOo]]></content>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
 </search>
