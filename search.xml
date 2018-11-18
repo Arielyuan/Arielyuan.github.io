@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[在没有root权限时安装perl模块]]></title>
     <url>%2F2018%2F11%2F18%2F%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%89%E8%A3%85perl%E6%A8%A1%E5%9D%97%2F</url>
-    <content type="text"><![CDATA[如果有root权限的话，其实这是一件很简单的事情。不知道有多少人和我有类似的经历：我要使用一个软件，但这个软件会调用到perl的模块： The following extra Perl modules should also be present: XML::Simple LWP::Simple DBD::SQLite 于是，我试着用cpan安装第一个模块XML::Simple: XML::DOM``` 1然后出现了这样的提示：``` zsh: command not found: cpan 用cpanm12wget http://xrl.us/cpanm -O /tmp/user106/cpanm; chmod +x /tmp/user106/cpanm 这个时候，还不能直接用cpanm下载模块，因为它会默认将你的模块装到/user/local等目录下，这里是你没有权限写入的。 123[user106@cu01]/tmp/user106/perl-Modules% /tmp/user106/cpanm XML::DOM!! Can&apos;t write to /usr/local/share/perl5 and /usr/local/bin: Installing modules to /User$ome/user106/perl5 这时候，你可以用下面的命令装到自己的目录下：123export PERL_CPANM_OPT=&quot;--prompt --reinstall -l /tmp/user106/perl-5.28.0 --mirror http://cpan.cpantesters.org&quot; #指定cpanm模块安装路径为/tmp/user106/perl-5.28.0;指定mirror网站 export PERL5LIB=/tmp/user106/perl-5.28.0:$PERL5LIB #添加lib环境变量source ~/.zshrc #如果用的是bash，则是修改 ~/.bashrc 再次运行命令，就发现上个报错已经你没有了：12345678[user106@cu01]/tmp/user106% ./cpanm XML::Simple--&gt; Working on XML::SimpleFetching http://cpan.cpantesters.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz ... OK==&gt; Found dependencies: ExtUtils::MakeMaker--&gt; Working on ExtUtils::MakeMakerFetching http://cpan.cpantesters.org/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-7.34.tar.gz ... OKConfiguring ExtUtils-MakeMaker-7.34 ... OKCan&apos;t locate ExtUtils/Manifest.pm in @INC (@INC contains: FatPacked::39213960=HASH(0x2565b88) /tmp/user106/perl-5.28.0 /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at ./cpanm line 132. 出现了新的报错：Can&#39;t locate ExtUtils/Manifest.pm in @INC搜索了一下，有一种解决方案是下载perl-core: 12345wget &quot;https://www.rpmfind.net/linux/centos/7.5.1804/os/x86_64/Packages/perl-core-5.16.3-292.el7.x86_64.rpm&quot;rpm2cpio perl-core-5.16.3-292.el7.x86_64.rpm | cpio -div #打开rpm压缩包或者：wget &quot;https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/aarch64/os/Packages/p/perl-devel-5.28.0-425.fc30.aarch64.rpm&quot;rpm2cpio perl-core-5.16.3-292.el7.x86_64.rpm | cpio -div 妈呀，解决不动了😭 下载CPAN12wget https://cpan.metacpan.org/authors/id/A/AN/ANDK/CPAN-2.16.tar.gz tar -zxvf CPAN-2.16.tar.gz 1.自己下载perl模块：https://www.cpan.org/ #可以搜索下载]]></content>
+    <content type="text"><![CDATA[如果有root权限的话，其实这是一件很简单的事情。不知道有多少人和我有类似的经历：我要使用一个软件，但这个软件会调用到perl的模块： The following extra Perl modules should also be present: XML::Simple LWP::Simple DBD::SQLite 于是，我试着用cpan安装第一个模块XML::Simple: XML::DOM``` 12345然后出现了这样的提示：`zsh: command not found: cpan`### 换用cpanm wget http://xrl.us/cpanm -O /tmp/user106/cpanm;chmod +x /tmp/user106/cpanm1这个时候，还不能直接用cpanm下载模块，因为它会默认将你的模块装到/user/local等目录下，这里是你没有权限写入的。 [user106@cu01]/tmp/user106/perl-Modules% /tmp/user106/cpanm XML::DOM!! Can’t write to /usr/local/share/perl5 and /usr/local/bin: Installing modules to /User$ome/user106/perl512这时候，你可以用下面的命令装到自己的目录下： export PERL_CPANM_OPT=”–prompt –reinstall -l /tmp/user106/perl-5.28.0 –mirror http://cpan.cpantesters.org&quot; #指定cpanm模块安装路径为/tmp/user106/perl-5.28.0;指定mirror网站export PERL5LIB=/tmp/user106/perl-5.28.0:$PERL5LIB #添加lib环境变量source ~/.zshrc #如果用的是bash，则是修改 ~/.bashrc12再次运行命令，就发现上个报错已经你没有了： [user106@cu01]/tmp/user106% ./cpanm XML::Simple–&gt; Working on XML::SimpleFetching http://cpan.cpantesters.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz … OK==&gt; Found dependencies: ExtUtils::MakeMaker–&gt; Working on ExtUtils::MakeMakerFetching http://cpan.cpantesters.org/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-7.34.tar.gz … OKConfiguring ExtUtils-MakeMaker-7.34 … OKCan’t locate ExtUtils/Manifest.pm in @INC (@INC contains: FatPacked::39213960=HASH(0x2565b88) /tmp/user106/perl-5.28.0 /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at ./cpanm line 132.12出现了新的报错：`Can&apos;t locate ExtUtils/Manifest.pm in @INC` 搜索了一下，有一种解决方案是下载perl-core: wget “https://www.rpmfind.net/linux/centos/7.5.1804/os/x86_64/Packages/perl-core-5.16.3-292.el7.x86_64.rpm&quot;rpm2cpio perl-core-5.16.3-292.el7.x86_64.rpm | cpio -div #打开rpm压缩包或者：wget “https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/aarch64/os/Packages/p/perl-devel-5.28.0-425.fc30.aarch64.rpm&quot;rpm2cpio perl-core-5.16.3-292.el7.x86_64.rpm | cpio -div123妈呀，解决不动了😭### 下载CPAN wget https://cpan.metacpan.org/authors/id/A/AN/ANDK/CPAN-2.16.tar.gztar -zxvf CPAN-2.16.tar.gz ` 1.自己下载perl模块：https://www.cpan.org/ #可以搜索下载]]></content>
       <categories>
         <category>软件操作</category>
       </categories>
@@ -60,9 +60,9 @@
     <content type="text"><![CDATA[google-site-verification: google3f41a15ca869dd02.html]]></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"><![CDATA[碎碎念]]></content>
+    <title><![CDATA[about]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[tags]]></title>
@@ -70,8 +70,8 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[about]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"></content>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"><![CDATA[碎碎念]]></content>
   </entry>
 </search>
