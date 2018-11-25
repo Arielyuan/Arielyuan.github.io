@@ -11,15 +11,13 @@
 
 
 
-  
 
-
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next pisces" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222">
+<meta name="theme-color" content="">
 
 
 
@@ -56,21 +54,13 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
+<link href="//main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
 
 
 
@@ -86,18 +76,18 @@
     root: '/',
     scheme: 'Pisces',
     version: '6.4.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebar: "",
+    fancybox: ,
+    fastclick: ,
+    lazyload: ,
+    tabs: ,
+    motion: "",
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      hits: "",
+      labels: ""
     }
   };
 </script>
@@ -123,8 +113,6 @@
 
 
 
-
-  <link rel="canonical" href="http://www.chenzeyuan.fun/"/>
 
 
 
@@ -178,10 +166,8 @@
 
   
   
-    
-  
 
-  <div class="container sidebar-position-left 
+  <div class="container  
   page-home">
     <div class="headband"></div>
     <a href="https://github.com/Arielyuan"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
@@ -217,95 +203,9 @@
 
 <nav class="site-nav">
   
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-    <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-    <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-    <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-schedule">
-    <a href="/schedule/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />日程表</a>
-  </li>
-
-      
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
-        </li>
-      
-    </ul>
-  
 
   
 
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-
-
-    </div>
   
 </nav>
 
@@ -352,7 +252,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen Zeyuan">
       <meta itemprop="description" content="Live, Learn, Feel, Think">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -382,70 +282,13 @@
             
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
 
-              
-                
-              
-
-              <time title="创建时间：2018-11-18 11:34:00" itemprop="dateCreated datePublished" datetime="2018-11-18T11:34:00+08:00">2018-11-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-11-19 04:00:32" itemprop="dateModified" datetime="2018-11-19T04:00:32+08:00">2018-11-19</time>
-              
             
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件操作/" itemprop="url" rel="index"><span itemprop="name">软件操作</span></a></span>
-
-                
-                
-              
-            </span>
-          
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/18/服务器上安装perl模块/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/11/18/服务器上安装perl模块/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -457,13 +300,13 @@
           
             <div class="post-symbolscount">
               
+                <span class="post-meta-divider">|</span>
+              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">2.2k</span>
               
@@ -476,8 +319,6 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -502,21 +343,24 @@
       
         
           
-          如果有root权限的话，其实这是一件很简单的事情。不知道有多少人和我有类似的经历：我要使用一个软件，但这个软件会调用到perl的模块：  
-The following extra Perl modules should also be present:XML::Simple   LWP::Simple   DBD::SQLite     
-于是，我试着用cpan安装第一个模块XML::Simple:   
-cpan XML::DOM   
-然后出现了这样的提示：
-zsh: command not found: cpan
-换用cpanm12wget http://xrl.us/cpanm -O 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/18/服务器上安装perl模块/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>如果有root权限的话，其实这是一件很简单的事情。<br>不知道有多少人和我有类似的经历：<br>我要使用一个软件，但这个软件会调用到perl的模块：  </p>
+<p>The following extra Perl modules should also be present:<br><code>XML::Simple   LWP::Simple   DBD::SQLite</code>     </p>
+<p>于是，我试着用<code>cpan</code>安装第一个模块<code>XML::Simple</code>:   </p>
+<p><code>cpan XML::DOM</code>   </p>
+<p>然后出现了这样的提示：</p>
+<p><code>zsh: command not found: cpan</code></p>
+<h3 id="换用cpanm"><a href="#换用cpanm" class="headerlink" title="换用cpanm"></a>换用cpanm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://xrl.us/cpanm -O /tmp/user106/cpanm; </span><br><span class="line">chmod +x /tmp/user106/cpanm</span><br></pre></td></tr></table></figure>
+<p>这个时候，还不能直接用cpanm下载模块，因为它会默认将你的模块装到/user/local等目录下，这里是你没有权限写入的。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user106@cu01]/tmp/user106/perl-Modules% /tmp/user106/cpanm XML::DOM</span><br><span class="line">!</span><br><span class="line">! Can&apos;t write to /usr/local/share/perl5 and /usr/local/bin: Installing modules to /User$ome/user106/perl5</span><br></pre></td></tr></table></figure>
+<p>这时候，你可以用下面的命令装到自己的目录下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export PERL_CPANM_OPT=&quot;--prompt --reinstall -l /tmp/user106/perl-5.28.0 --mirror http://cpan.cpantesters.org&quot;  #指定cpanm模块安装路径为/tmp/user106/perl-5.28.0;指定mirror网站   </span><br><span class="line">export PERL5LIB=/tmp/user106/perl-5.28.0:$PERL5LIB #添加lib环境变量</span><br><span class="line">source ~/.zshrc #如果用的是bash，则是修改 ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>再次运行命令，就发现上个报错已经你没有了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[user106@cu01]/tmp/user106% ./cpanm XML::Simple</span><br><span class="line">--&gt; Working on XML::Simple</span><br><span class="line">Fetching http://cpan.cpantesters.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz ... OK</span><br><span class="line">==&gt; Found dependencies: ExtUtils::MakeMaker</span><br><span class="line">--&gt; Working on ExtUtils::MakeMaker</span><br><span class="line">Fetching http://cpan.cpantesters.org/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-7.34.tar.gz ... OK</span><br><span class="line">Configuring ExtUtils-MakeMaker-7.34 ... OK</span><br><span class="line">Can&apos;t locate ExtUtils/Manifest.pm in @INC (@INC contains: FatPacked::39213960=HASH(0x2565b88) /tmp/user106/perl-5.28.0 /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at ./cpanm line 132.</span><br></pre></td></tr></table></figure></p>
+<p>出现了新的报错：<code>Can&#39;t locate ExtUtils/Manifest.pm in @INC</code><br>搜索了一下，有一种解决方案是下载perl-core:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget &quot;https://www.rpmfind.net/linux/centos/7.5.1804/os/x86_64/Packages/perl-core-5.16.3-292.el7.x86_64.rpm&quot;</span><br><span class="line">rpm2cpio perl-core-5.16.3-292.el7.x86_64.rpm | cpio -div #打开rpm压缩包</span><br><span class="line">或者：</span><br><span class="line">wget &quot;https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/aarch64/os/Packages/p/perl-devel-5.28.0-425.fc30.aarch64.rpm&quot;</span><br><span class="line">rpm2cpio perl-core-5.16.3-292.el7.x86_64.rpm | cpio -div</span><br></pre></td></tr></table></figure>
+<p>妈呀，解决不动了😭我还没有吃饭呢</p>
+<h3 id="下载CPAN"><a href="#下载CPAN" class="headerlink" title="下载CPAN"></a>下载CPAN</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://cpan.metacpan.org/authors/id/A/AN/ANDK/CPAN-2.16.tar.gz   </span><br><span class="line">tar -zxvf CPAN-2.16.tar.gz</span><br></pre></td></tr></table></figure>
+<p>1.自己下载perl模块：<br><code>https://www.cpan.org/</code> #可以搜索下载</p>
+
+          
         
       
     </div>
@@ -576,7 +420,7 @@ zsh: command not found: cpan
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen Zeyuan">
       <meta itemprop="description" content="Live, Learn, Feel, Think">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -606,70 +450,13 @@ zsh: command not found: cpan
             
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
 
-              
-                
-              
-
-              <time title="创建时间：2018-09-21 11:03:00" itemprop="dateCreated datePublished" datetime="2018-09-21T11:03:00+08:00">2018-09-21</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-11-25 18:57:38" itemprop="dateModified" datetime="2018-11-25T18:57:38+08:00">2018-11-25</time>
-              
             
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/那一刻/" itemprop="url" rel="index"><span itemprop="name">那一刻</span></a></span>
-
-                
-                
-              
-            </span>
-          
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/21/内心深处的温柔/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/09/21/内心深处的温柔/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -681,13 +468,13 @@ zsh: command not found: cpan
           
             <div class="post-symbolscount">
               
+                <span class="post-meta-divider">|</span>
+              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">3.4k</span>
               
@@ -700,8 +487,6 @@ zsh: command not found: cpan
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">3 分钟</span>
               
@@ -726,16 +511,44 @@ zsh: command not found: cpan
       
         
           
-          我以后要成为怎样的人2018-11-23Ksenia邀请我和Ramon去她的家里吃饭，她为我们准备很丰盛的晚餐。大家一边吃饭，一边开心的聊着最近发生的事情，后来我们聊到自己的导师。Ksenia说：我知道他（她的导师）是一个很好的人，但是我们来到这里快要4个月了，他从来都没有关心过我们：生活的怎么样？有没有困难？甚至都没有问过一句”How are you?”……Ksenia来自以色列，Ramon来自美国，他们也都跟我讲过初来德国的艰辛。看着Ksenia的眼睛，我能感受到她有多希望得到导师的关心和问候。而在一旁的Ramon也点了点头，大家突然都沉默了。这种难过与失落，我感同身受。  
-我想起第一次
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/21/内心深处的温柔/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="我以后要成为怎样的人"><a href="#我以后要成为怎样的人" class="headerlink" title="我以后要成为怎样的人"></a>我以后要成为怎样的人</h2><h3 id="2018-11-23"><a href="#2018-11-23" class="headerlink" title="2018-11-23"></a>2018-11-23</h3><p>Ksenia邀请我和Ramon去她的家里吃饭，她为我们准备很丰盛的晚餐。大家一边吃饭，一边开心的聊着最近发生的事情，后来我们聊到自己的导师。<br>Ksenia说：我知道他（她的导师）是一个很好的人，但是我们来到这里快要4个月了，他从来都没有关心过我们：生活的怎么样？有没有困难？甚至都没有问过一句”How are you?”……<br>Ksenia来自以色列，Ramon来自美国，他们也都跟我讲过初来德国的艰辛。<br>看着Ksenia的眼睛，我能感受到她有多希望得到导师的关心和问候。而在一旁的Ramon也点了点头，大家突然都沉默了。这种难过与失落，我感同身受。  </p>
+<p>我想起第一次去他们实验室，他们是一个很大的实验室，有经验丰富的博士后、博士、专门提DNA的技术人员还有很多学生，看着他们的团队，宽敞做桌椅和崭新的电脑，我还十分羡慕来着。而这一刻，我感受到，我也是那个让人羡慕的人啊！尽管Michi和他们接触的不多，但是Michi会对着他们笑，询问近况，让他们觉得亲切，而不是‘距离感’。<br>对于我的朋友们，我能做的只有告诉他们，如果有什么困难，需要帮助的地方，尽管跟我说……但我知道，导师给的关怀和信任，是其他所不可替代的。  </p>
+<p>在这个方面，Michi深深的影响着我，他对学生设身处地的着想，尊重，理解，一次一次让我感动：<br>我以为他会对我有很高的期望，比如发表大的文章，完成好项目，组建实验室之类的(我狭隘的以为他可能也想得到一些好处)……然而，我没有想到，在谈到这个话题的时候，他说：Ignight是一个合作性的项目，各个机构都分散开，有公司、学校、研究机构，他希望我可以多去一些地方，多帮助别人，“我希望你能在这几年里学到新的东西，在最后有很多收获……”。<br>所以看着我总在实验室的时候，他会跟我说，可以适当出去走一走，玩一玩；在他知道我想学德语以后，会送给我专门给中国人学习德语的CD；很认真的跟我说，我可以自由的安排我的时间，工作的地点，因为他相信我会完成我应有的工作小时和任务。   </p>
+<p>突然我很想成为像他那样的人。我不害怕跟他说我的想法，我在很快乐的工作和学习。而且，我知道，比起取得丰厚的科研成果，成为很厉害的科学家，他更希望我健康快乐的生活成长。<br>我很开心，在我有了好的科研基础和习惯以后，在这里又有了安全感和自由。  </p>
+<p>同样对我影响很大的还有马涛老师，在我因为托福、文章压力太大，每天失眠的时候，一句“文章有我在”，我就能完全放下心来；而只要马涛老师说“没问题”，我就坚信不疑。因此在硕士三年里，我从来没有担心过毕不了业、文章发不出去的情况。因为了解马涛老师的能力、品质，因此我百分之百信任，我只要低头好好做好自己的工作就好。  </p>
+<p>我想成为像马涛老师一样，强大的，值得信赖的人，同时，也像Michi一样，包容的，温暖的人。    </p>
+<h2 id="朋友"><a href="#朋友" class="headerlink" title="朋友"></a>朋友</h2><h3 id="2018-11-23-1"><a href="#2018-11-23-1" class="headerlink" title="2018-11-23"></a>2018-11-23</h3><p>星期三下午，在等火车的S-Bahn的时候，我突然在想，这一段时间，我都做了些什么呢？  </p>
+<p>……本来上周就应该看完的背景文献到现在都没有看完、新的软件说明一直没有看懂、重新要装的软件都没有装上、该补的数据还没有补、养的蜗牛死的越来越多、德语也没有记了几个单词，英语也还是一塌糊涂……  </p>
+<p>越想心里就越难受，为什么这么没有效率。新的项目遥遥无期，旧的文章心有余而力不足（服务器不足……），每天还很容易困，注意力也不集中  </p>
+<p>我发了一条朋友圈，写了写这个老泪纵横的我。  </p>
+<p>Yihe是和我一个计划里面的，他比我更惨，他要赶快硕士毕业才能开始项目，但跟导师联系了很久，他的导师不理他。所以前一段时间，他跟我说他每天迷茫，无所事事，怀疑人生，没有动力什么的，当时我还安慰他……  </p>
+<p>我跟他发消息：<br>—— 我今天也很丧<br>—— 为什么呀？<br>他听我说完，发皱着眉头的表情。<br>我说，    来咱们一起哭<br>然后他发了一个：抱头痛哭<br>然后我笑了  </p>
+<p>其实，在他跟我诉苦的时候，我能帮上他什么忙呢？他也不能真正解决我的麻烦，但有人听你倾诉，有人懂你现在的心情，有人应和你，在倒完苦水以后，突然觉得轻松了很多呢。  </p>
+<p>和我有着7个小时时差的瑞铭，他睡了一半起来看到我的朋友圈，半夜四点多起来跑到外面的万达广场跟我视频，特别感动  </p>
+<p>所以想这就是朋友的意义吧，有时候，需要人在你的身边，只一句“你也别太有压力哦”就够了。很朴实，很简单，也真的，有时候很需要有人对你说这样的话。</p>
+<p>哈哈，这句话来自于同样在慕尼黑留学的Han同学！  </p>
+<p>感谢我的朋友们。我也希望大家都能克服重重困难，一切顺利。</p>
+<h2 id="责任"><a href="#责任" class="headerlink" title="责任"></a>责任</h2><h3 id="2018-11-11"><a href="#2018-11-11" class="headerlink" title="2018-11-11"></a>2018-11-11</h3><p>从实验室回到家，我的舍友兴奋的讨论着圣诞节去维也纳玩：  </p>
+<p>—— 泽源，你要不要和我们一起去呀？<br>—— 我… 我还是不去了吧……  </p>
+<p>我的两个舍友，一个是TMU数学系，一个是LMU的经济统计专业，都是一年级的硕士。说这句话的时候，我在想我是不是太不合群了呢？来慕尼黑一个多月，我每天除了办理七七八八的材料，不是在实验室，就是去图书馆。拒绝了她们很多次一起吃饭的邀请，也没有一起出去旅行过。    </p>
+<p>—— 因为我刚来这里，对新的工作还不熟悉，所以我想留在这里，觉得在实验室会比较安心和踏实一些……  </p>
+<p>看着她们失望的神情，我不知她们能不能理解。<br>但我清楚的知道，我在像她们年纪的时候，和她们想的一样呀！好奇的想看这个世界，想去四处走一走，想经历不同的事情，想和朋友以及心爱的人体验新鲜的事物。  </p>
+<p>现在我觉得身上有很大的责任：我要好好完成我的项目，Michi寄予我很大的期望，我不想辜负他的信任；我要想我的未来，在三年以后，要做出点成果，积累经验……  </p>
+<p>我这样会不会很不好呢？前几天我跟在飞机场遇到的在英国读博士的朋友聊天，我提到了这个烦恼。没有想到，他激动的跟我说，他的情况也跟我一样！跟我有强烈的共鸣…… 哈哈，所以不是我们不合群呢。又可以开心的去实验室了~  </p>
+<p>工作真的让人很安心那，在这个年纪</p>
+<h2 id="真爱"><a href="#真爱" class="headerlink" title="真爱"></a>真爱</h2><h3 id="2018-10-19"><a href="#2018-10-19" class="headerlink" title="2018-10-19"></a>2018-10-19</h3><p>我和Michi走在路上<br>我看到旁边的农场里面有马  </p>
+<p>—— Did kings always ride horses in the ancient times?<br>—— No,not really..Why do you say that?<br>—— Ah..Because I read many fairy tales, which said princes usually ride white horses..  </p>
+<p>Michi笑了，我们接着往前走，脚踩着落叶发出吱吱的声音  </p>
+<p>—— are you waiting for a prince whith a white horse?<br>—— No…(我的第一反应说出了No，我自己都吓了一跳)<br>我试着跟他解释：因为你需要先遇到一个你喜欢他，他也喜欢你的人，然后你要去了解他，跟他相处。你把你的真心，爱，时间，和精力都给了他，但是你不知道结果会是什么样子的，可能会让你受到很大的伤害……所以觉得这是一件很奢侈的事情……  </p>
+<p>现在的我在说出这样一番话的时候，还真不像当年那个憧憬着王子到来的小女生  </p>
+<p>Michi 沉默了一会儿：Trust me, you will meet him. True love will appear when you stop finding him.  </p>
+<p>那一刻我笑了，好像心里有冰雪被融化了一样。我相信他。 </p>
+<p>这一天，是我24周岁的生日。我很高兴，我的生日和Michi一起度过：去了教堂，爬了山，看到一个很漂亮的湖，走了很长的路，说了很多的话……  </p>
+<p>当然，还有Michi给的我新的希望~  </p>
+<h2 id="不舍的眼睛"><a href="#不舍的眼睛" class="headerlink" title="不舍的眼睛"></a>不舍的眼睛</h2><h3 id="2018-09-21"><a href="#2018-09-21" class="headerlink" title="2018-09-21"></a>2018-09-21</h3><p>爸爸回来了<br>—— 源，你不是25号走吗？<br>—— 不是呢，我24号一大早就走了爸<br>—— 啊？那连中秋节都过不成…<br>爸爸瞪起眼睛看着我说，24号就走啦？！ 那个时候，我都不敢再看爸爸，因为我感觉，我也快哭了（我觉得我爸也快哭了，嘿嘿）</p>
+<h2 id="世界上让我最安心的地方是妈妈的臂弯"><a href="#世界上让我最安心的地方是妈妈的臂弯" class="headerlink" title="世界上让我最安心的地方是妈妈的臂弯"></a>世界上让我最安心的地方是妈妈的臂弯</h2><h3 id="2018-09-19"><a href="#2018-09-19" class="headerlink" title="2018-09-19"></a>2018-09-19</h3><p>我看了看表，凌晨3点33分，辗转反侧了很久，还是睡不着觉<br>在黑暗中，抱着我的枕头被子，去妈妈的床，妈妈睡得正香<br>我躺在妈妈旁边：妈，我睡不着……<br>睡眼惺忪的妈妈用胳膊把我抱住，脸贴着我的额头，手轻轻地拍着我，就像抱着一个婴儿<br>突然我的眼泪就掉下来了<br>在妈妈旁边，我渐渐地睡着了<br>以后，远在异乡的我，要去哪里才有这一份温暖和安心呢？</p>
+
+          
         
       
     </div>
@@ -795,7 +608,7 @@ zsh: command not found: cpan
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen Zeyuan">
       <meta itemprop="description" content="Live, Learn, Feel, Think">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -825,70 +638,13 @@ zsh: command not found: cpan
             
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
 
-              
-                
-              
-
-              <time title="创建时间：2018-09-16 16:20:00" itemprop="dateCreated datePublished" datetime="2018-09-16T16:20:00+08:00">2018-09-16</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-11-17 16:25:08" itemprop="dateModified" datetime="2018-11-17T16:25:08+08:00">2018-11-17</time>
-              
             
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/经验帖/" itemprop="url" rel="index"><span itemprop="name">经验帖</span></a></span>
-
-                
-                
-              
-            </span>
-          
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/16/我的玛丽·居里学者申请之路/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/09/16/我的玛丽·居里学者申请之路/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -900,13 +656,13 @@ zsh: command not found: cpan
           
             <div class="post-symbolscount">
               
+                <span class="post-meta-divider">|</span>
+              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">7.9k</span>
               
@@ -919,8 +675,6 @@ zsh: command not found: cpan
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">7 分钟</span>
               
@@ -945,17 +699,93 @@ zsh: command not found: cpan
       
         
           
-          “从准备材料，申请，面试到办签证，是一个很曲折的过程，所幸的是，这一路上有许多帮助我的人，谨以此文章感谢曾经给与我帮助的人，并希望我的这些经历可以帮助到其他追求梦想的学者们。”
-玛丽·居里项目介绍已经有很多帖子来介绍玛丽居里项目，我也是通过很多人的整理，才慢慢了解它。所以这里就不做其他的说明了，放上链接：
-官方网站: http://ec.europa.eu/research/mariecurieactions/junjun 的live：https://www.zhihu.com/lives/841307658001711104博士星球有关玛丽居里申请的介绍：https://zhuanlan.z
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/16/我的玛丽·居里学者申请之路/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p><em>“从准备材料，申请，面试到办签证，是一个很曲折的过程，所幸的是，这一路上有许多帮助我的人，谨以此文章感谢曾经给与我帮助的人，并希望我的这些经历可以帮助到其他追求梦想的学者们。”</em></p>
+<h1 id="玛丽·居里项目介绍"><a href="#玛丽·居里项目介绍" class="headerlink" title="玛丽·居里项目介绍"></a>玛丽·居里项目介绍</h1><p>已经有很多帖子来介绍玛丽居里项目，我也是通过很多人的整理，才慢慢了解它。所以这里就不做其他的说明了，放上链接：</p>
+<p>官方网站: <a href="http://ec.europa.eu/research/mariecurieactions/" target="_blank" rel="noopener">http://ec.europa.eu/research/mariecurieactions/</a><br>junjun 的live：<a href="https://www.zhihu.com/lives/841307658001711104" target="_blank" rel="noopener">https://www.zhihu.com/lives/841307658001711104</a><br>博士星球有关玛丽居里申请的介绍：<a href="https://zhuanlan.zhihu.com/p/39660534" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/39660534</a></p>
+<h1 id="申请历程"><a href="#申请历程" class="headerlink" title="申请历程"></a>申请历程</h1><h2 id="我"><a href="#我" class="headerlink" title="我"></a>我</h2><p>我觉得我是一个很幸运的人，因为比我的自身条件好的人有很多很多，介绍我的背景，是希望大家不要因为硬件而放弃努力和希望。  </p>
+<p>我的本科是泉州师范学院，一个几乎没有人知道的普通二本，生物技术专业。2015年考研考入四川大学，生态学专业（基因组和重测序方向），今年六月份从四川大学毕业。  </p>
+<p>我的英语超级差，六级从大二考到了研二，每次都去考，终于在研二的时候过了：但真的是万万没想到，因为那一次我的作文题目都没有看懂，全都写跑偏了，我还记得一出了考场，我就做了再考一次的准备……  </p>
+<p>在申请这个项目时，只有一篇影响因子0.446分的小SCI文章。  </p>
+<h2 id="决定出国"><a href="#决定出国" class="headerlink" title="决定出国"></a>决定出国</h2><h3 id="“好像，继续做科研也可以”"><a href="#“好像，继续做科研也可以”" class="headerlink" title="“好像，继续做科研也可以”"></a>“好像，继续做科研也可以”</h3><p>在考虑要不要出国读博士的时候，已经是研二升研三的那个暑假。本来超级抵触把所有时间都放到科研中的我，突然发现，自己已经习惯了每天呆在实验室的生活。所以突然觉得，好像，继续读博也还可以~   </p>
+<p><strong>2017年8月中旬</strong>的时候，我们实验室邀请了美国、欧洲的好多个老师做报告，我的导师（我叫他老大~）当时让我们把自己的课题讲给一位美国的老师（matt）听。那是我第一次真正意义上“使用”英文。结果我连说带比划，磕磕绊绊的说着我的研究结果。尽管如此，matt认真又耐心的听我一点一点讲完，让我非常感动。也是那次，我第一次发自内心的，想练好英语。 </p>
+<p>后来老大说，matt对我们很有兴趣，我们可以去他那里读博士。想到matt人那么好，所以心里第一次有了：不然出国读个博士吧？这样的念头。（但想要在18年秋季就入学的话，明显已经晚了很多，因此提醒大家最好还是早思考，早准备）。  </p>
+<h3 id="第一个目标：康奈尔"><a href="#第一个目标：康奈尔" class="headerlink" title="第一个目标：康奈尔"></a>第一个目标：康奈尔</h3><p>有了这样的念头以后，有一天偶然发现，做报告的老师里面，有一个是康奈尔大学的！<br>当时都还不知道康奈尔世界上排名很靠前的名校，只是在知乎上看到一个帖子，我发现，康奈尔真是太美了！有小溪河流，冬天还有我最喜欢的雪，我觉得我愿意每天都呆在那里！内心真是强烈的想去这里读书……<br>所以我在美丽的校园和和蔼可亲的老板里面，选择了美丽的校园（我的奇葩顺序是美丽的校园&gt;和蔼可亲的老板&gt;影响因子文章和科研）<br>因此我的目标一开始是美国，为此我需要准备托福和GRE。我给康奈尔的老师写了信，他说，只要达到康奈尔的录取线，我就可以去那里读书。康奈尔生物系对于博士托福的要求没有很严格，只要超过单科线就好：阅读18分，听力19分，口语22分，写作20分。申请的截止日期是12月25日。</p>
+<h3 id="拾起，放弃，又拾起"><a href="#拾起，放弃，又拾起" class="headerlink" title="拾起，放弃，又拾起"></a>拾起，放弃，又拾起</h3><p>花了一个多月的时间，我才弄明白了什么是托福，托福考什么，以及，以我的基础我需要多久才能达到学校的标准。然而，由于我还要一边算数据，改文章，做实验室的工作，所以我只能每天挤出来三分之一的时间复习。  </p>
+<p>最开始的那段时间是绝望的，甚至一套完整的考试都做不下来。每天早上爬起来去操场听听力，去实验室做阅读，用路上的时间背单词，然后还要应对一下午和晚上实验室的工作，压力特别大。令人沮丧的是，<strong>从8月到10月初</strong>，学习了两个月，我自己评估了一下，最多只能考四十几分。  </p>
+<p>10月份国奖答辩，我用了一个多星期准备海报，PPT和演讲。11月份，各种招聘会，宣讲会，而我的英语还是没有一点进步。所以内心好动摇，不如去工作吧？拍了证件照，做了简历，参加了诺和的几轮面试……直到11月底我还是没有把握走进考场，因此取消了12月份报名的考试。期间还在不停的补充数据，整理流程，修改文章……后来打算，不如先把文章发表出来吧？做成了一件事，都已经很好了。  </p>
+<p>在我觉得已经完全不可能的时候，康奈尔的老师写信说，如果我申请公派的话，那么学校申请的截止日期可以推迟到2月中旬。那就是说，我又多出来40几天学习托福的时间。已经灰心的我又开始充满希望，说不定，我再努力努力还有机会！于是将原来每天1/3的托福学习时间变成了2/3，40几天后，<strong>1月13日</strong>在西南科技大学（绵阳），我参加了托福考试。在那之后，我又用了一个星期的时间看了一眼什么是GRE，在那个星期天<strong>1月20日</strong>，几乎像裸考一样，考了GRE。  </p>
+<p>托福和GRE，真的是我再也不想考第二次的考试。  </p>
+<p>后来，托福的成绩出来，84分。对于基础这么差的我来说，这已经发挥出了我最好的水平，超出了我的预估，很满意了。然而，我的口语单科19分并没有达到康奈尔口语单科的线（22分），因此，康奈尔就只能说再见。 </p>
+<p>当时，我的打算是，不如等毕业以后，用一年的时间，好好复习英语吧。虽然底子比较差，但也基本上摸清了门路，多花点时间的话，应该不是什么问题。至于GRE，我想要考到不错的成绩，以我的水平，至少要全心全意准备三五个月。  </p>
+<h3 id="意外的申请"><a href="#意外的申请" class="headerlink" title="意外的申请"></a>意外的申请</h3><p><strong>2月7日</strong>，那天我们还在开年终总结。师兄发给我一个链接，我知道了这个计划：在全球招收15个博士，来研究无脊椎动物的基因组和系统发育。当时，我想了想，方向很对口，无脊椎动物也很有趣，而且反正我也有现成的材料，不如就试试吧。所以我注册了账号，按照步骤一项一项的提交了材料（列出来我上传的）：  </p>
+<p><strong>基本资料</strong>  (包括姓名，性别，出生日期，学历，教育经历等等)<br><strong>我的英文个人简历</strong>（将之前找工作时候的简历翻译成英文）<br><strong>科研经历</strong>（我主要写了我的文章所做的工作）<br><strong>获奖情况</strong> （这个我真的弄得很水，把奖状全拍下来，放到word里面，然后翻译都是自己在有道词典上翻译，写在奖状下方的，真的惨不忍睹……）<br><strong>大学和研究生的成绩单</strong>（这个也是我自己翻译的……）<br><strong>其他</strong>（这个选项让你自己上传你想要传的东西，我灵机一动，正好我做了海报，因此上传了国奖答辩时候的<strong>海报</strong>）<br><strong>三个志愿以及填报志愿的原因</strong>（后来我来到的这个是我的第三个志愿）<br><strong>三个教授的联系方式</strong>（这个很奇怪，因为我以为会要推荐信的，结果一直到我录取都没有要推荐信）</p>
+<p>本来想在11月份就投稿的文章，仍然还在补充着数据，好像遥遥无期。没有什么可以拿得出手的语言和文章，我也从来没有想过会被选上。所以我的整个申请其实弄得很粗糙，甚至连邮箱都是留的QQ邮箱…… 网页上清清楚楚的写着每个老师的简介和联系方式，我也没有去套磁啊什么的念头（其实也是不懂）。还有一个原因，我也不知道这个项目是有奖学金资助的（更不知道是无比丰厚的奖学金），因此也没有放在心上。就这样，填完申请表以后，这件事就被我抛到了脑后。  </p>
+<h3 id="小插曲——泡汤的马尔堡公派"><a href="#小插曲——泡汤的马尔堡公派" class="headerlink" title="小插曲——泡汤的马尔堡公派"></a>小插曲——泡汤的马尔堡公派</h3><p>是的，我也是申请过CSC奖学金的人 </p>
+<p>过完年，回到实验室，那时候我觉得今年想要出国是不可能了。<strong>3月7日</strong>，毛老师（实验室的另一个老师）问我出国的进展如何，问我欧洲，比如德国在不在我的考虑范围之内：他在德国出差时，那边的老师Lars提起需要技术熟练的硕士，和我的研究方向一致。  </p>
+<p>“我觉得你硕士期间的工作很出色，但是你的文章你没有发表，所以最好是通过熟人介绍的方式，才比较容易出去”  （十分感谢毛老师对我的认可！！）  </p>
+<p>“但是欧洲钱比较少，所以他们希望通过CSC公派项目过去”</p>
+<p>研究对象相近，方向一致！我今年还有希望出去？！！我愿意，我愿意！赶紧给Lars写了一封邮件，附上个人简历，科研经历等等，表明了我的意向。  </p>
+<p>接着就是一拍即合，准备公派的材料，因为公派提交材料的截止日期是3月中旬。  </p>
+<p>这里再一次感谢毛老师，Lars为我一遍又一遍的修改，检查，仅仅用了三两天，就准备好了申请公派的材料：  </p>
+<p><strong>申请表</strong><br><strong>个人简历</strong><br><strong>接收函/邀请信</strong><br><strong>研修计划</strong><br><strong>国外导师简历</strong><br><strong>语言证明</strong> （公派对英语考试托福和雅思的成绩是有要求的，我的托福成绩没有达到公派要求的分数，但没有关系，不考也是可以的，只要让导师写一份证明，写着诸如：通过skype视频或者邮件往来等，XX的英文已经完全具备了在以后研究和工作的条件就可以了）<br>还有其他成绩单，身份证复印件之类的东西，可以去官网上下载提交清单。  </p>
+<p>提交之后，学校会进行初选，然后会把名单公布，公布名单以后，要自己在网站上再提交一次申请。川大申请公派读博的几率是很大的，所以当时几乎是板上钉钉的事情，我就满怀希望的等待  </p>
+<p>悲催的是，我以为名单会在生科院告示栏公布，每天都去检查告示栏，直到我感觉不应该真么久打电话过去问的时候，才知道原来已经公布在了网站上，而那时，网上报名的渠道都已经关闭一周了。（#如果能找到和自己一起申请的人还是挺重要的，可以信息共享，避免错过重要的消息）  </p>
+<p>写信给老大道歉，给毛老师道歉，给老板道歉，给Lars道歉……心痛又懊悔，也管不了自己的情绪，还要安慰我的家人……就这样，公派 good bye。  </p>
+<h2 id="玛丽居里"><a href="#玛丽居里" class="headerlink" title="玛丽居里"></a>玛丽居里</h2><h3 id="Michi的邮件"><a href="#Michi的邮件" class="headerlink" title="Michi的邮件"></a>Michi的邮件</h3><p>在我等待公派的时候，<strong>3月16日晚上</strong>，我收到了我现在的导师，也就是当时我申请的第三个志愿的导师Michi的邮件。  </p>
+<p>那是一封有三页长的，非常诚恳的邮件，问了我很多很多问题。结尾时，他说：我看到你申请我这个课题，对你的印象很深，我这么做并不是很正式，但是，你看，我只是想多了解你一些，请你不要有任何顾虑，自由的回答。  </p>
+<p>满满的感谢和感动，因为这封邮件里字里行间都有着对我的尊重，诚意和问候。  </p>
+<p>我的第一反应是，我竟然不记得我第三志愿报了这个老师和机构（因为当时在这个老师和挪威的一个老师之间犹豫了很久，结果忘记提交的时候究竟填写了哪一个），然后感到十分惊喜，竟然老师会看中我的背景和申请资料。接着才赶紧了解了这个计划，发现，原来这个还有奖学金！同时也了解到，这个面向各个国家的申请，通过率也极低。  </p>
+<p>先回信表示感谢，然后用了四五天时间，我把他信里提到的问题一一回答了。我知道我的英文其实不是很好，有很多表述可能都有问题，但我都详细检查了，在末尾跟他说，我的英文不是很好，如果有什么用词或表述不当的地方，希望他原谅。  </p>
+<p>然后我问了他，后面选拔的流程是怎么样的？  </p>
+<p>他说，首先每个PI会根据每项指标对候选人进行打分，进行初步的筛选；然后15个PI聚在一起讨论，每个人选出3个候选者；这三个候选者会接到视频面试的通知，4月会陆陆续续的进行面试；等所有的人都面试完之后，最终选出来一个。  </p>
+<p>在和Michi的交流过程中，可以发现他真的是超级nice，特别会为别人考虑的人。心里好想在他的团队下工作，好想加入进去。</p>
+<h3 id="紧张的准备"><a href="#紧张的准备" class="headerlink" title="紧张的准备"></a>紧张的准备</h3><p><strong>4月12日下午</strong>，在公派凉了以后，我心灰意冷，突然想到，已经快要4月中旬，玛丽居里也没有给我发要面试的消息，会不会这个面试也已经过了呢？慌张的我赶紧给Michi写了一封信，问他我是不是在三个候选人里面，是不是面试已经结束了。那时都没有考虑到时差，欧洲已经是快11点了。  </p>
+<p>没想到不就后便收到了来信，Michi可能感受到了我邮件中焦急的语气，他先回了一封邮件说，不要怕，你在我的list里面，以及，面试还没有开始，然后说，稍后我还会写一封长的邮件给你。  </p>
+<p>当时的我真的是感动的热泪盈眶。  </p>
+<p>第二封邮件，他跟我说了15个PI开会的情况，以及问我4月20日下午有没有空进行skype视频面试，告诉了他的账号，电话号码等等等等。  </p>
+<p>我仿佛又有了一个救命稻草，但我也深深地担忧我的口语水平。  </p>
+<p>试着问了一下成都一对一的口语班，两天的面试培训要1万多，我望而却步，想想还是硬着头皮自己上吧！  </p>
+<p>看帖子，攻略，写自我介绍的稿子，做PPT，准备我能想到的所有他会问我的问题，然后一遍一遍的在楼道练习。  </p>
+<p>也是在这个时候，我在知乎上看到junjun对玛丽居里项目的介绍，我发了邮件说出我的烦恼，没有想到，他不仅回信了，还用skype听了我的自我介绍，给了我很多建议（十分感谢）。他说，我觉得你的口语不差，这句话真的给了我很大的信心。  </p>
+<p>我的小姨是翻译，经常去欧洲和美国，当时，他也找了一个她德国的朋友（robert），对我的自我介绍也提了很多建议。  </p>
+<p>思彤帮我借了一间实验室，便是我视频的地方（感谢思彤和刘家小师妹）。  </p>
+<p>在视频的前一个小时，我对着小花，调试设备，角度，背了很多遍我的自我介绍  </p>
+<p>那几天我都很紧张，老大跟我说，怕什么，那些分析你都做过了，什么都会做，还要准备什么（这句话，后来在skype的时候，Michi问我，你能为我们的项目做什么的时候，我想起了老大的话，直接条件反射的说：我认为我所有的都能做……我看到他满意的笑了，但我在说完的一刹那，感觉有点虚/捂脸）  </p>
+<h3 id="skype"><a href="#skype" class="headerlink" title="skype"></a>skype</h3><p><strong>4月20日下午2点</strong> 我看网上的帖子都说，刚打开skype，可能会有看不到啊，声音听不到啊之类的情况，要耽误很久才能进入正题。我还准备了：hello~ can you see me? can you hear me?……这样的开场白的时候，2点整，一连接，所有都是好的！！没有任何意外和突发情况，竟然就直接开始了！所以那时我又慌又懵，节奏有点乱…  </p>
+<p>Michi的第一句话是：你好，我甚至不知道该怎么读你的名字。我说Zeyuan..<br>他学了一下，因为没学好笑了，然后晃了晃手中的纸：你看，我准备了这么多问题想要问你！我们开始吧！  </p>
+<p>我的内心：我准备的自我介绍（节奏又一次打乱）……  </p>
+<p>他可能看到了我的犹豫，跟我说，在问题之前，你有什么想说的吗？  </p>
+<p>我说，yeah！我准备了一个自我介绍，我可以介绍给你吗？ <strong>我的经验是从自己熟悉的事情开始，按照自己计划好的走，比较不容易紧张，自我介绍是我准备比较久的，我顺利说下来的话，也会增加后面的信心，会越来越轻松。我想如果他没有问，我直接回答问题，我表达的磕磕绊绊，可能会越发挥越差</strong>  </p>
+<p>在整个过程中，Michi都露出慈祥的笑容，我一下子就放松了，比我在跟Robort练习的时候都发挥的好很多。Mihi提到了他在巴西的经历，他说当时他在那边的时候，语言完全不通，非常艰难，他如果不懂，就会一直问一直问，别人就会想其他的办法解释给他听。然后叫我不要害怕问，有没有听懂的，就问他，他也会那样解释给我。有很多地方，真的非常感谢他非常善意的引导，在我说不清楚的时候，他真的超级有耐心，一点一点听我讲完，然后努力试着理解我。  </p>
+<p>这里列出来部分他问到的问题，提供大家参考：  </p>
+<ol>
+<li>你为什么报这个项目，为什么想来欧洲</li>
+<li>你认为你可以为这个项目贡献多少（因为每个项目要实现的目标是已经列出来的）</li>
+<li>你有没有出海的经历（这是因为我可能会去采样）</li>
+<li>什么时候能硕士毕业，办签证需要多久，什么时候能开始工作</li>
+<li>你对未来职业生涯的规划是什么</li>
+<li>你认为对一个团队而言，最重要的是什么</li>
+<li>我对你现在的文章很感兴趣，你能跟我说说你的文章做了些什么吗？</li>
+<li>你有哪些优点，那些缺点</li>
+<li>你有申请其他的单位和机构吗（这里我磕磕绊绊说了一把我坎坷的申请历程，然后表明了我很想来的意向）</li>
+<li>你有什么问题想问我的吗 （这里我问了几个问题，其中有几个是与项目相关的：我问有没有分析数据用的超级计算机，对项目可以扩展的几个地方问了他的意见，以及我什么时候会知道我有没有入选，最后我问了他，因为难民，慕尼黑安全不安全：这个问题，他都笑了，他说慕尼黑特别安全，他们实验室有几个巴西的，都不想回去了。我的心中：巴西..emmm..的安全怎么能跟中国比呢）  </li>
+</ol>
+<p>大概<strong>3点半</strong>的时候，面试愉快的结束了。总共进行了1个半小时。我了解到，一般结束后，都要发给导师感谢信，正在编辑的时候，没想到Michi已经发了信给我。 </p>
+<p><em>‘Hi Zeyuan, was very nice to meet you and to hear about your current work together with a botanist. All fine, you did great.  Cheers, Michael’</em>  </p>
+<p>我还记得，面试结束后那天的日记，我写着：在面试之前，真的很希望加入这个团队，和Michi一起工作，去欧洲留学……很忐忑最后的结果，担心努力又一次落空……然而，在面试结束以后，我反而觉得，即便在最后我没有被选上，我也非常感激有这样的机会和经历，能认识这么善解人意的Michi，还能见到他，和他交流……  </p>
+<p><strong>4月27日</strong> 我被录取了！！  </p>
+<p><em>’just to let you know that the interviews are over and you are my number one candidate. Congrats! :)<br>I’ll be happy to welcome you here.<br>Looking forward to a nice and productive collaboration,<br>Cheers, enjoy your weekend, Michael’</em></p>
+<p><strong>7月13日</strong> 我收到了正式的录取信！</p>
+<p><strong>9月17日</strong> 历经坎坷得到签证，也直到这一刻，我才感受到，这不是梦，这是真的！我真的可以去留学了！  </p>
+<p><strong>9月25日</strong> 在飞机场，我见到了Michi，还是那样和蔼可亲的笑脸，他亲自开车接我到我的公寓，然后送给我一块巧克力（他说怕我饿了）和两本书：一本Living and working in Germany，另一本是münchen。在飞机上，我还在担心闲聊的时候聊不下去，Michi后悔把我招进来来着，还在看书恶补英语。但是Michi总是能让我特别安心，让我觉得，没有关系，慢慢来。  </p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>写到这里，我的申请几乎历程几乎结束了。如同宿命一般，你的一个计划落空了，看似什么都没有得到，可是你永远不知道后面会有更好的东西在等着你。  </p>
+<p>今年5月底，我回了一趟母校，泉州师范学院。在厦门的时候抽了一个签。上面是这样写的： 一箭射空，当空不空，待等春来，彩在其中。我想用来形容我这一路来的经历再适合不过了。  </p>
+<p>其实我也并不认为我和玛丽居里申请是从2月份才开始的：研究生的三年，实验室为我提供了学习的环境，遇到了好的老师和师兄，让我有了很扎实的基础；8月份，因为学习了托福，我的英语提高了很多；10月份，在准备国奖答辩的过程中，一遍一遍理清我的文章思路，漂亮的海报也成为我申请的加分项；11月份，为了找工作，我有了工作照和漂亮的简历（这个工作照后来成为我Ignight的照片了）；对其他学校的申请让我有了科研简历和与老师交流的经验等等……虽然看似毫无关系，但每一步都在为下一步做准备。  </p>
+<p>如果怎样的情况申请概率比较大，我觉得：<strong>与你想申请的玛丽居里项目十分对口的专业技能</strong>+<strong>对你所在的项目有比较深入的了解与研究兴趣</strong>+<strong>与老师的性格合得来</strong> 当然，这个奖学金每个项目都有自己的网站，里面会有详细项目的规划，老师的信息等，十分便利大家深入了解和申请。如果重来的话，我肯定会在申请后主动发邮件给教授的！  </p>
+<p>遇到Michi，我觉得很开心也很幸运。我也希望我能不忘初心，不要让他失望，也让自己在这三年，有所成长和收获。  </p>
+<p>下一篇帖子，我可能要写一写办理签证以及在慕尼黑生活了，哈哈，或者夸一夸Michi~</p>
+
+          
         
       
     </div>
@@ -1015,7 +845,7 @@ zsh: command not found: cpan
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen Zeyuan">
       <meta itemprop="description" content="Live, Learn, Feel, Think">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1045,70 +875,13 @@ zsh: command not found: cpan
             
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
 
-              
-                
-              
-
-              <time title="创建时间：2018-09-15 12:53:00" itemprop="dateCreated datePublished" datetime="2018-09-15T12:53:00+08:00">2018-09-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-11-12 02:49:08" itemprop="dateModified" datetime="2018-11-12T02:49:08+08:00">2018-11-12</time>
-              
             
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/碎碎念/" itemprop="url" rel="index"><span itemprop="name">碎碎念</span></a></span>
-
-                
-                
-              
-            </span>
-          
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/15/我的第一篇博客/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/09/15/我的第一篇博客/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -1120,13 +893,13 @@ zsh: command not found: cpan
           
             <div class="post-symbolscount">
               
+                <span class="post-meta-divider">|</span>
+              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">1.1k</span>
               
@@ -1139,8 +912,6 @@ zsh: command not found: cpan
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">1 分钟</span>
               
@@ -1165,17 +936,18 @@ zsh: command not found: cpan
       
         
           
-          25岁的大孩子我，今年已经25岁了。25岁的年纪，我身边的很多人已经结婚生子，或者已经步入社会多年，积累了很多财富和工作经验…… 而我，在选择读博以后，我的未来三年，四年，甚至更多的时间，都和现在的状态差不多吧。
-我的爸爸妈妈，还一直把我当成孩子一样，我呢，在他们面前，也像以前是孩子的模样，也许可能还不知道应该转换成一个什么样的角色，就维持了现状吧。
-第一次吧，上个月在妈妈骑着摩托车带我去看病的时候，我坐在后面，突然看到了妈妈的白发，不是一两根，而是很多很多，凌乱地夹杂在一起。我用欢快的语调跟妈妈说着杂七杂八的事情和笑话：我想假装没看到，假装不难过，或者，我也是在安慰自己。然而视线中的白头发却
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/15/我的第一篇博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="25岁的大孩子"><a href="#25岁的大孩子" class="headerlink" title="25岁的大孩子"></a>25岁的大孩子</h2><p>我，今年已经25岁了。25岁的年纪，我身边的很多人已经结婚生子，或者已经步入社会多年，积累了很多财富和工作经验…… 而我，在选择读博以后，我的未来三年，四年，甚至更多的时间，都和现在的状态差不多吧。</p>
+<p>我的爸爸妈妈，还一直把我当成孩子一样，我呢，在他们面前，也像以前是孩子的模样，也许可能还不知道应该转换成一个什么样的角色，就维持了现状吧。</p>
+<p>第一次吧，上个月在妈妈骑着摩托车带我去看病的时候，我坐在后面，突然看到了妈妈的白发，不是一两根，而是很多很多，凌乱地夹杂在一起。我用欢快的语调跟妈妈说着杂七杂八的事情和笑话：我想假装没看到，假装不难过，或者，我也是在安慰自己。然而视线中的白头发却一直伫在那里，挥之不去。后来的一天，我才知道，原来妈妈自己染头发，已经染了很久了。</p>
+<p>去大连送我妹妹的前几天，妈妈说自己的白头发太多了，想要再自己染一次。我爽快的说，妈，我来帮你染！于是我们在超市里买了染发剂，我也有机会，拨开一层一层的头发，好好看看妈妈的头发。那次，和妈妈有说有笑的，我抚摸着妈妈的头发，心里想，其实头发白了也不是什么让人害怕的事情啊！</p>
+<p>后来，在动车上，爸爸坐我旁边的时候，我看到了爸爸的白发。一向在我眼中挺拔健壮的爸爸，耳边的头发竟然也白了。一瞬间特别想哭，因为妈妈的白发，我还可以用手去抚摸，去安慰，而面对爸爸，我却什么也做不出，甚至都不知该如何提起……</p>
+<p>在家的一个多月，我没有怎么做自己的事情。25岁的我，像小孩子一样，妈妈去哪里，我就跟着去哪里，这是我从小到读大学之前，一直做得事情。工作等我走了以后，有很长的时间可以做，在这里，我只想多陪陪我的爸爸妈妈。</p>
+<p>前几天，我跟着爸爸妈妈去村子里上礼。见了很多亲戚，还有爸妈的朋友们。最后去了爸爸的一个好朋友家里，那位叔叔和善正直，说起看到爸爸前几年的脸色不好，很心疼什么的…… 出来以后，感觉，在爸妈的身边，有这样的好朋友在，真的很让人欣慰和安心。爸爸因为高血压生病住院那年，远在异乡上学的我和我妹妹，因为爸妈的隐瞒，什么都不知道。爸妈怕我们担心和添负担，我们也怕什么都不知情呢。</p>
+<p>我的妈妈，每天都给我做我喜欢的饭菜，带我去她觉得很好玩的地方，给我买我喜欢喝的奶茶，不让我做家务活，就让我好好歇着……</p>
+<p>我的爸爸，每次回来，都从口袋里拿出一把小东西给我吃，酸枣啦，牛肉干啦，瓜子啦… 过马路的时候会笨拙的想要揽着我，吃饭的时候把最好的都留给我……</p>
+<p>很庆幸我有这么好的爸爸，妈妈，还有一个很好的妹妹。25岁的年纪，突然觉得应该有一些沉淀下来的属于自己的东西，有很多很多的话，很多很多的感想。我的第一篇博客，写给一直爱着我，支持我，保护着我的爸爸，妈妈和妹妹，以及同样爱着我的，我的亲人和朋友们。</p>
+
+          
         
       
     </div>
@@ -1235,7 +1007,7 @@ zsh: command not found: cpan
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen Zeyuan">
       <meta itemprop="description" content="Live, Learn, Feel, Think">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1265,19 +1037,6 @@ zsh: command not found: cpan
             
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-08-10 23:28:24" itemprop="dateCreated datePublished" datetime="2018-08-10T23:28:24+08:00">2018-08-10</time>
-            
 
             
           </span>
@@ -1285,16 +1044,6 @@ zsh: command not found: cpan
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/08/10/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/10/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -1306,13 +1055,13 @@ zsh: command not found: cpan
           
             <div class="post-symbolscount">
               
+                <span class="post-meta-divider">|</span>
+              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">430</span>
               
@@ -1325,8 +1074,6 @@ zsh: command not found: cpan
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">1 分钟</span>
               
@@ -1351,19 +1098,17 @@ zsh: command not found: cpan
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More in
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/10/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
         
       
     </div>
@@ -1440,98 +1185,9 @@ More in
           </div>
 
           
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
 
           
 
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  <a href="https://github.com/Arielyuan" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                  
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="zeyuan.chen@qq.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://www.zhihu.com/people/zeyuanchen" target="_blank" title="知乎"><i class="fa fa-fw fa-globe"></i>知乎</a>
-                  
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://www.cnblogs.com/arielyuan" target="_blank" title="博客园"><i class="fa fa-fw fa-globe"></i>博客园</a>
-                  
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/arielzyc" target="_blank" title="FB Page"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
-                  
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://instagram.com/Arielzyc" target="_blank" title="Instagram"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
-                  
-                </span>
-              
-            </div>
           
 
           
@@ -1567,7 +1223,7 @@ More in
 
   
   <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Chen Zeyuan</span>
 
@@ -1576,8 +1232,6 @@ More in
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    
-      <span class="post-meta-item-text">站点总字数：</span>
     
     <span title="站点总字数">15k</span>
   
@@ -1588,8 +1242,6 @@ More in
       <i class="fa fa-coffee"></i>
     </span>
     
-      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    
     <span title="站点阅读时长">14 分钟</span>
   
 </div>
@@ -1597,15 +1249,9 @@ More in
 
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a> v6.4.0</div>
 
 
 
@@ -1658,8 +1304,6 @@ More in
 
 
 
-  
-
 
 
 
@@ -1674,31 +1318,26 @@ More in
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="//velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script type="text/javascript" src="//velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+  <script type="text/javascript" src="//src/utils.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+  <script type="text/javascript" src="//src/motion.js?v=6.4.0"></script>
 
 
 
@@ -1706,9 +1345,9 @@ More in
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+  <script type="text/javascript" src="//src/affix.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
+  <script type="text/javascript" src="//src/schemes/pisces.js?v=6.4.0"></script>
 
 
 
@@ -1717,7 +1356,7 @@ More in
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+  <script type="text/javascript" src="//src/bootstrap.js?v=6.4.0"></script>
 
 
 
@@ -1734,354 +1373,9 @@ More in
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: '7dNAhGoDhveB0RGnwLOtYCww-gzGzoHsz',
-        appKey: 'GNp0j3DE8ESP9xMhio2UHc0S',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        meta:guest,
-        pageSize:'10' || 10,
-        visitor: false
-    });
-  </script>
-
 
 
   
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
 
 
 
@@ -2092,21 +1386,6 @@ More in
   
 
   
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
 
   
 
