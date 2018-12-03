@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Chen Zeyuan&#39;s blog">
 <meta property="og:description" content="sizecutter.py统计N50,scaffold长度等信息   FALCONexperimental PacBio diploid assembler   quast.py比较不同的assembly的质量，也可以统计assembly的信息http://quast.bioinf.spbau.ru/manual.html   123456789101112131415161718192021so">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-03T21:39:23.908Z">
+<meta property="og:updated_time" content="2018-12-03T22:02:38.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lrz.useful.software.md">
 <meta name="twitter:description" content="sizecutter.py统计N50,scaffold长度等信息   FALCONexperimental PacBio diploid assembler   quast.py比较不同的assembly的质量，也可以统计assembly的信息http://quast.bioinf.spbau.ru/manual.html   123456789101112131415161718192021so">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-04 05:39:23" itemprop="dateModified" datetime="2018-12-04T05:39:23+08:00">2018-12-04</time>
+                <time title="修改时间：2018-12-04 06:02:38" itemprop="dateModified" datetime="2018-12-04T06:02:38+08:00">2018-12-04</time>
               
             
           </span>
@@ -502,6 +502,7 @@
 <h2 id="quast-py"><a href="#quast-py" class="headerlink" title="quast.py"></a>quast.py</h2><p>比较不同的assembly的质量，也可以统计assembly的信息<br><a href="http://quast.bioinf.spbau.ru/manual.html" target="_blank" rel="noopener">http://quast.bioinf.spbau.ru/manual.html</a>  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">source activate /naslx/projects/pn69xe/di52zuy/ignite_tools_py3/</span><br><span class="line">quast.py \</span><br><span class="line"># specify reference assembly from NCBI</span><br><span class="line">-r Cryptococcus_gattii_VGII_R265_WGS_GCA_002954075.1.fasta \</span><br><span class="line"># specify output dir with -o</span><br><span class="line">-o 10a_cgat_quast_canu_ont_ref \</span><br><span class="line"># specify short reads</span><br><span class="line">-1 cgat_hiseq_SRR1513844_1.trimmed.filteredq25.fastq.gz \</span><br><span class="line">-2 cgat_hiseq_SRR1513844_2.trimmed.filteredq25.fastq.gz \</span><br><span class="line"># pre-produced mapping bam file of illumina reads to the refercne genome assembly</span><br><span class="line">--ref-bam Cryptococcus_gattii_VGII_R265_WGS_GCA_002954075.1_hisat2_mapped_sorted_SRR1513844.bam \</span><br><span class="line"># pre-produced mapping bam file of illumina reads to our assembly of interest (canu ont pilon)</span><br><span class="line">--bam cgat_canu_ont_assembly.contigs_hisat2_mapped_sorted_SRR1513844_pilon.bam \</span><br><span class="line"># specify nanopore reads that will be mapped by quast</span><br><span class="line">--nanopore cgat_ont_SRR6363418.porechopped_1kb.fastq.gz \</span><br><span class="line"># specify nanopore reads that will be mapped by quast</span><br><span class="line">--pacbio cgat_pacbio_SRR5891540_1kb.fastq.gz \</span><br><span class="line"># number of threads/cores</span><br><span class="line">-t 28 \</span><br><span class="line"># specify the fasta of the genome of interest</span><br><span class="line">cgat_canu_ont_assembly.contigs_pilon.fasta</span><br></pre></td></tr></table></figure>
 <h2 id="下载包"><a href="#下载包" class="headerlink" title="下载包"></a>下载包</h2><p><code>module load nano</code></p>
+<h2 id="firefox"><a href="#firefox" class="headerlink" title="firefox"></a>firefox</h2><p><code>firefox *.pdf</code> 直接从linux打开文件  </p>
 
       
     </div>
@@ -777,7 +778,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sizecutter-py"><span class="nav-number">1.</span> <span class="nav-text">sizecutter.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FALCON"><span class="nav-number">2.</span> <span class="nav-text">FALCON</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quast-py"><span class="nav-number">3.</span> <span class="nav-text">quast.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载包"><span class="nav-number">4.</span> <span class="nav-text">下载包</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sizecutter-py"><span class="nav-number">1.</span> <span class="nav-text">sizecutter.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FALCON"><span class="nav-number">2.</span> <span class="nav-text">FALCON</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#quast-py"><span class="nav-number">3.</span> <span class="nav-text">quast.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载包"><span class="nav-number">4.</span> <span class="nav-text">下载包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#firefox"><span class="nav-number">5.</span> <span class="nav-text">firefox</span></a></li></ol></div>
             
 
           </div>
