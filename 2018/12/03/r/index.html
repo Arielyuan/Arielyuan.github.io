@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Chen Zeyuan&#39;s blog">
 <meta property="og:description" content="as.logical123myvector[as.logical (myvector&amp;lt;17)]  #subset data &amp;lt;17myvector[as.logical ((myvector%%3==0) | (!(myvector%%2==0)))] myvector[(myvector%%3==0)| (myvector%%2!=0)] #as.logical可以省略 as.cha">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-05T14:57:05.881Z">
+<meta property="og:updated_time" content="2018-12-05T15:01:49.106Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="R">
 <meta name="twitter:description" content="as.logical123myvector[as.logical (myvector&amp;lt;17)]  #subset data &amp;lt;17myvector[as.logical ((myvector%%3==0) | (!(myvector%%2==0)))] myvector[(myvector%%3==0)| (myvector%%2!=0)] #as.logical可以省略 as.cha">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-05 22:57:05" itemprop="dateModified" datetime="2018-12-05T22:57:05+08:00">2018-12-05</time>
+                <time title="修改时间：2018-12-05 23:01:49" itemprop="dateModified" datetime="2018-12-05T23:01:49+08:00">2018-12-05</time>
               
             
           </span>
@@ -511,7 +511,7 @@
 <h2 id="sapply"><a href="#sapply" class="headerlink" title="sapply"></a>sapply</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x &lt;- list(A=c(1,2,3,4,5),</span><br><span class="line">          B=c(1,3,5),</span><br><span class="line">          C=1)</span><br><span class="line">proberi &lt;- function(x)&#123;</span><br><span class="line">     sum(x[x&gt;2])</span><br><span class="line">&#125;</span><br><span class="line">sapply(x,proberi)</span><br></pre></td></tr></table></figure>
 <h2 id="unique"><a href="#unique" class="headerlink" title="unique"></a>unique</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(iris[,5]) #不重复的取出第五列所有的行</span><br></pre></td></tr></table></figure>
 <h2 id="data-frames"><a href="#data-frames" class="headerlink" title="data frames"></a>data frames</h2><p>#第一个参数是row,第二个是列  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">iris[10, &quot;Petal.Length&quot;]</span><br><span class="line">#5 row, petal.length &amp;&amp; sepal.width line</span><br><span class="line">iris[5, c(&quot;Petal.Length&quot;,&quot;Sepal.Width&quot;)]</span><br><span class="line">iris[iris$Petal.Length&gt;2, c(2,3)] #过滤petal.length 大于2的行，然后输出第2和3列</span><br><span class="line">subset(iris, Petal.Length&gt;2, 2,3)</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">## 以物种分开序列，然后输出每个物种的平均长度</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">iris[10, &quot;Petal.Length&quot;]</span><br><span class="line">iris[5, c(&quot;Petal.Length&quot;,&quot;Sepal.Width&quot;)] #5 row, petal.length &amp;&amp; sepal.width line</span><br><span class="line">iris[iris$Petal.Length&gt;2, c(2,3)] #过滤petal.length 大于2的行，然后输出第2和3列</span><br><span class="line">subset(iris, Petal.Length&gt;2, 2,3)</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">## 以物种分开序列，然后输出每个物种的平均长度</span><br></pre></td></tr></table></figure>
 <p>s &lt;- split(my.iris, my.iris$Species)<br>m &lt;- function(x){<br>     mean (x$Sepal.Length) #mean(my.iris[my.iris$Species==”versicolor”, “Sepal.Width”])<br>}<br>sapply(s,m)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 生成一个列表</span><br></pre></td></tr></table></figure>
 <p>ddf &lt;- data.frame(<br>  x = runif (100000, -1,1),<br>  y = runif (100000, -1,1)<br>)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 加头</span><br></pre></td></tr></table></figure></p>
