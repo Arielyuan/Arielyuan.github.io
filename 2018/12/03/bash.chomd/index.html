@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Chen Zeyuan&#39;s blog">
 <meta property="og:description" content="awkawk &amp;#39;$4&amp;gt;1000&amp;#39; a.txt ##过滤第四列大于1000的，输出来这些行awk &amp;#39;$1&amp;gt;1000 &amp;amp;&amp;amp; $2==&amp;quot;mRNA&amp;quot; {print $1,$2,$3}&amp;#39; a.txt #过滤第一列大于1000，第二列等于mRNA，输出只带第一列，第二列，第三列的所有行awk &amp;#39;$2~/^scaffold/">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-19T16:03:47.992Z">
+<meta property="og:updated_time" content="2018-12-19T16:11:34.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bash useful operation">
 <meta name="twitter:description" content="awkawk &amp;#39;$4&amp;gt;1000&amp;#39; a.txt ##过滤第四列大于1000的，输出来这些行awk &amp;#39;$1&amp;gt;1000 &amp;amp;&amp;amp; $2==&amp;quot;mRNA&amp;quot; {print $1,$2,$3}&amp;#39; a.txt #过滤第一列大于1000，第二列等于mRNA，输出只带第一列，第二列，第三列的所有行awk &amp;#39;$2~/^scaffold/">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-20 00:03:47" itemprop="dateModified" datetime="2018-12-20T00:03:47+08:00">2018-12-20</time>
+                <time title="修改时间：2018-12-20 00:11:34" itemprop="dateModified" datetime="2018-12-20T00:11:34+08:00">2018-12-20</time>
               
             
           </span>
@@ -504,7 +504,7 @@
 <p>we can do that:<br><code>less 1.fasta | perl -pe &#39;s/\n//g&#39; |grep -o &quot;ATGC\|CGTA&quot; |wc -l</code> #用空格替换掉所有的空格<br>or<br><code>grep -v &quot;&gt;&quot; 1.fasta | tr -d &quot;\n&quot; |grep -o &quot;ATGC\|GCAT&quot; |wc -l</code> #用tr删掉所有的空格</p>
 <p>the result is 4</p>
 <h3 id="cut"><a href="#cut" class="headerlink" title="cut"></a>cut</h3><p><code>cut -f1 -d &quot; &quot; a.txt</code> #在不是以tab键隔开的文件中，用-d可以指定分隔符，如以空格隔开  </p>
-<h3 id="统计一条fasta有多长"><a href="#统计一条fasta有多长" class="headerlink" title="统计一条fasta有多长"></a>统计一条fasta有多长</h3><p>我的目录下有很多个fasta文件，我想看每一个fasta有多长：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for f in */*fsa</span><br><span class="line">do</span><br><span class="line">   grep -v &quot;&gt;&quot; $f |tr -d &quot;\n&quot; |wc -L #grep -v 去掉带&gt;的行</span><br><span class="line">   done</span><br></pre></td></tr></table></figure></p>
+<h3 id="统计一条fasta有多长"><a href="#统计一条fasta有多长" class="headerlink" title="统计一条fasta有多长"></a>统计一条fasta有多长</h3><p>我的目录下有很多个fasta文件，我想看每一个fasta有多长：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for f in */*fsa</span><br><span class="line">do</span><br><span class="line">   grep -v &quot;&gt;&quot; $f |tr -d &quot;\n&quot; |wc -L #grep -v 去掉带&gt;的行</span><br><span class="line">done</span><br></pre></td></tr></table></figure></p>
 <p>这样通常是不方便的，我们可以同时输出fasta的名字以及sequence的长度：  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">for i in */*.fsa</span><br><span class="line">do</span><br><span class="line">   NAME=`grep &quot;&gt;&quot; $i | cut -f 1 -d &quot; &quot; | tr -d &quot;&gt;&quot;`</span><br><span class="line">   LENGTH=`grep -v &quot;&gt;&quot; $i | tr -d &quot;\n&quot; | wc -c`</span><br><span class="line">   echo &quot;$&#123;NAME&#125; $&#123;LENGTH&#125;&quot; &gt;&gt; chromo_length.txt</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
 <h3 id="统计populus目录下有多少个文件"><a href="#统计populus目录下有多少个文件" class="headerlink" title="统计populus目录下有多少个文件"></a>统计populus目录下有多少个文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for i in populus\*</span><br><span class="line">do</span><br><span class="line">   ls $i |wc -l</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
