@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Chen Zeyuan&#39;s blog">
 <meta property="og:description" content="Access and overview of HPC(High Performance Systems)http://doku.lrz.de   HPC opend for ignightmpp2 mpp3 ivymuc inter      System Name Cores per node RAM per node(GB) MaxJobLimitsNodes MaxJobLimitsCore">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-19T16:10:36.417Z">
+<meta property="og:updated_time" content="2018-12-19T20:54:32.179Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Lrz HPC Systems">
 <meta name="twitter:description" content="Access and overview of HPC(High Performance Systems)http://doku.lrz.de   HPC opend for ignightmpp2 mpp3 ivymuc inter      System Name Cores per node RAM per node(GB) MaxJobLimitsNodes MaxJobLimitsCore">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-20 00:10:36" itemprop="dateModified" datetime="2018-12-20T00:10:36+08:00">2018-12-20</time>
+                <time title="修改时间：2018-12-20 04:54:32" itemprop="dateModified" datetime="2018-12-20T04:54:32+08:00">2018-12-20</time>
               
             
           </span>
@@ -462,7 +462,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.1k</span>
+                <span title="本文字数">2.2k</span>
               
 
               
@@ -557,7 +557,7 @@
 </table>
 <h3 id="operation"><a href="#operation" class="headerlink" title="operation"></a>operation</h3><h4 id="submit-jobs"><a href="#submit-jobs" class="headerlink" title="submit jobs"></a>submit jobs</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subtch *.sh</span><br></pre></td></tr></table></figure>
 <h4 id="check-jobs"><a href="#check-jobs" class="headerlink" title="check jobs"></a>check jobs</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">squeue --cluster=mpp3</span><br></pre></td></tr></table></figure>
-<h4 id="cancel-jibs"><a href="#cancel-jibs" class="headerlink" title="cancel jibs"></a>cancel jibs</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scancel JobID</span><br></pre></td></tr></table></figure>
+<h4 id="cancel-jibs"><a href="#cancel-jibs" class="headerlink" title="cancel jibs"></a>cancel jibs</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scancel -M ivymuc -n pph</span><br><span class="line"> #-M Cluster -n Jobname</span><br></pre></td></tr></table></figure>
 <h4 id="example-scripts"><a href="#example-scripts" class="headerlink" title="example scripts"></a>example scripts</h4><h5 id="MPP2-–time-48-00-00"><a href="#MPP2-–time-48-00-00" class="headerlink" title="MPP2 (–time=48:00:00)"></a>MPP2 (–time=48:00:00)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#SBATCH --job-name=QUACANONT</span><br><span class="line">#SBATCH --reservation=IGNITE</span><br><span class="line">#SBATCH --ntasks=1</span><br><span class="line">#SBATCH --cpus-per-task=28</span><br><span class="line">#SBATCH --mail-type=ALL</span><br><span class="line">#SBATCH --clusters=mpp2</span><br><span class="line">#SBATCH --time=48:00:00</span><br><span class="line">#SBATCH --mem=55000</span><br><span class="line">#SBATCH --err=10a_cgat_quast_canu_ont_ref.err</span><br></pre></td></tr></table></figure>
 <h5 id="MPP3-–time-48-00-00"><a href="#MPP3-–time-48-00-00" class="headerlink" title="MPP3 (–time=48:00:00)"></a>MPP3 (–time=48:00:00)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash </span><br><span class="line">#SBATCH --job-name=metawrap</span><br><span class="line">#SBATCH --output=output_metawrap.%j.%N.log</span><br><span class="line">#SBATCH --error=error_metawrap.%j.%N.log</span><br><span class="line">#SBATCH --get-user-env </span><br><span class="line">#SBATCH --clusters=mpp3</span><br><span class="line">#SBATCH --nodes=3</span><br><span class="line">#SBATCH --ntasks-per-node=64</span><br><span class="line">#SBATCH --mail-user=user@lrz.uni-muenchen.de</span><br><span class="line">#SBATCH --mail-type=ALL </span><br><span class="line">#SBATCH --time=48:00:00</span><br></pre></td></tr></table></figure>
 <h5 id="IVYMUC-do-not-specify-memory-SBATCH-–mem-448gb-–time-72-00-00"><a href="#IVYMUC-do-not-specify-memory-SBATCH-–mem-448gb-–time-72-00-00" class="headerlink" title="IVYMUC (do not specify memory SBATCH –mem=448gb) (–time=72:00:00)"></a>IVYMUC (do not specify memory SBATCH –mem=448gb) (–time=72:00:00)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash </span><br><span class="line">#SBATCH --job-name=metawrap</span><br><span class="line">#SBATCH --output=output_metawrap.%j.%N.log</span><br><span class="line">#SBATCH --error=error_metawrap.%j.%N.log</span><br><span class="line">#SBATCH --get-user-env </span><br><span class="line">#SBATCH --clusters=ivymuc </span><br><span class="line">#SBATCH --nodes=7</span><br><span class="line">#SBATCH --cpus-per-task=16</span><br><span class="line">#SBATCH --ntasks-per-node=1</span><br><span class="line">#SBATCH --mail-user=user@lrz.uni-muenchen.de</span><br><span class="line">#SBATCH --mail-type=ALL</span><br><span class="line">#SBATCH --time=72:00:00</span><br></pre></td></tr></table></figure>
