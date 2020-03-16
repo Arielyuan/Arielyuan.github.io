@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/ariel.jpg?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ariel.jpg?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/ariel.jpg?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/ariel.jpg?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="这篇文章在2018年12月3日发表在Nature Ecology&amp;Evolution上原文链接：https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41559-018-0719-8#Sec13  研究对象：AureliaAurelia海月水母属于刺细胞动物门（Cnidaria），水母亚门（Medusozoa）。水母亚门又可以再分为水螅纲（Hydrozoa，代表动物水螅Hydr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The genome of the jellyfish Aurelia and the evolution of animal complexity">
+<meta property="og:url" content="http://yoursite.com/2018/12/16/Jelly_fish/index.html">
+<meta property="og:site_name" content="Chen Zeyuan&#39;s blog">
+<meta property="og:description" content="这篇文章在2018年12月3日发表在Nature Ecology&amp;Evolution上原文链接：https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41559-018-0719-8#Sec13  研究对象：AureliaAurelia海月水母属于刺细胞动物门（Cnidaria），水母亚门（Medusozoa）。水母亚门又可以再分为水螅纲（Hydrozoa，代表动物水螅Hydr">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-12-16T14:57:00.000Z">
+<meta property="article:modified_time" content="2020-03-16T14:40:40.750Z">
+<meta property="article:author" content="Chen Zeyuan">
+<meta property="article:tag" content="genome, evolution">
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/12/16/Jelly_fish/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>The genome of the jellyfish Aurelia and the evolution of animal complexity | Chen Zeyuan's blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/Arielyuan" target="_blank" rel="noopener"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Chen Zeyuan's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Expedition</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+    <a href="/schedule/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />日程表</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/16/Jelly_fish/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chen Zeyuan">
+      <meta itemprop="description" content="Live, Learn, Feel, Think">
+      <meta itemprop="image" content="https://media.giphy.com/media/k4bo0DI2Sbcze/giphy.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Zeyuan's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">The genome of the jellyfish Aurelia and the evolution of animal complexity
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-16 22:57:00" itemprop="dateCreated datePublished" datetime="2018-12-16T22:57:00+08:00">2018-12-16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-03-16 22:40:40" itemprop="dateModified" datetime="2020-03-16T22:40:40+08:00">2020-03-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/reading/" itemprop="url" rel="index"><span itemprop="name">reading</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/16/Jelly_fish/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/12/16/Jelly_fish/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+	
+      <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这篇文章在2018年12月3日发表在Nature Ecology&amp;Evolution上<br>原文链接：<a href="https://www.nature.com/articles/s41559-018-0719-8#Sec13" target="_blank" rel="noopener">https://www.nature.com/articles/s41559-018-0719-8#Sec13</a> </p>
+<h2 id="研究对象：Aurelia"><a href="#研究对象：Aurelia" class="headerlink" title="研究对象：Aurelia"></a>研究对象：Aurelia</h2><p>Aurelia海月水母属于刺细胞动物门（Cnidaria），水母亚门（Medusozoa）。水母亚门又可以再分为水螅纲（Hydrozoa，代表动物水螅Hydra）和<strong>钵水母纲</strong>（<strong>Scyphozoa</strong>，本文中的主角）。同属于这个门的还有珊瑚纲（Anthozoa，海葵Actiniaria、珊瑚）。到此文中涉及到的主要的动物都已经闪亮登场。  </p>
+<p>为什么要研究它呢？<br>1.1 刺细胞动物（Cnidaria）是两侧对称动物（Bilaterian）的姊妹枝，而两侧对称动物占了现存动物的几乎99%（当然人也在这里面）。  </p>
+<blockquote>
+<p>Phylogenetic analyses consistently support cnidarians as the sister clade to Bilateria (protostomes plus deuterostomes), the clade that encompasses 99% of extant animals.  </p>
+</blockquote>
+<p>1.2 在这个门已经报导的基因组中，只有海月水母有‘水母体’（medusa body）的生活史。在水母体阶段，重要的结构如感觉和神经系统得以进一步的发展。  </p>
+<blockquote>
+<p>Nearly all cnidarian life cycles incorporate polyp and/or medusa body plans, the former a sessile life stage, and the latter a swimming predator equipped with neural and sensory structures that rival those of many bilaterians. However, none of these species has a medusa life stage, and thus a major event in the evolution of complex animal life has not been subjected to whole genome sequencing.  </p>
+</blockquote>
+<p>1.3 文章就是在这样的背景下，通过海月水母与同门但没有水母体生活史的已测序物种：海葵（sea anemones <em>Nematostella vectensi<em>、</em>Exaiptasia pallida<em>）、珊瑚（coral *Acropora digitifera</em>）、水螅（hydroid <em>Hydra vulgaris</em>），以及与两侧对称动物：文昌鱼（<em>Branchiostoma</em>）、小头虫（<em>Capitella</em>）、果蝇（<em>Drosophila</em>）、人（*Homo</em>)等进行比较基因组分析，揭示这个生活史的出现是怎么进化出来的。  </p>
+<h2 id="基因组"><a href="#基因组" class="headerlink" title="基因组"></a>基因组</h2><p>2.1 测序策略  </p>
+<table>
+<thead>
+<tr>
+<th align="left">type</th>
+<th align="left">Insert size</th>
+<th align="left">coverage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Paired-end</td>
+<td align="left">220</td>
+<td align="left">500X</td>
+</tr>
+<tr>
+<td align="left">Paired-end</td>
+<td align="left">400</td>
+<td align="left">123X</td>
+</tr>
+<tr>
+<td align="left">Mate-pair</td>
+<td align="left">4000</td>
+<td align="left">9.4X</td>
+</tr>
+<tr>
+<td align="left">Mate-pair</td>
+<td align="left">8000</td>
+<td align="left">53X</td>
+</tr>
+<tr>
+<td align="left">PacBio</td>
+<td align="left">1573</td>
+<td align="left">4.1X</td>
+</tr>
+</tbody></table>
+<p>2.2 基因组信息  </p>
+<table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="center">Aurelia</th>
+<th align="center">Acropora</th>
+<th align="center">Exaiptasia</th>
+<th align="center">Hydra</th>
+<th align="center">Nematostella</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Total sequence length (Mb)</td>
+<td align="center">747</td>
+<td align="center">447</td>
+<td align="center">256</td>
+<td align="center">1,260</td>
+<td align="center">357</td>
+</tr>
+<tr>
+<td align="left">Number of scaffolds</td>
+<td align="center">16,793</td>
+<td align="center">2,421</td>
+<td align="center">4,312</td>
+<td align="center">132,858</td>
+<td align="center">10,804</td>
+</tr>
+<tr>
+<td align="left">Scaffold N50 (kb)</td>
+<td align="center">124</td>
+<td align="center">484</td>
+<td align="center">442</td>
+<td align="center">65</td>
+<td align="center">473</td>
+</tr>
+<tr>
+<td align="left">Number of contigs</td>
+<td align="center">67,055</td>
+<td align="center">54,401</td>
+<td align="center">29,750</td>
+<td align="center">236,667</td>
+<td align="center">59,149</td>
+</tr>
+<tr>
+<td align="left">Contig N50 (kb)</td>
+<td align="center">20</td>
+<td align="center">11</td>
+<td align="center">14</td>
+<td align="center">13</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td align="left">GC Content (%)</td>
+<td align="center">32.6</td>
+<td align="center">40.5</td>
+<td align="center">29.8</td>
+<td align="center">27.6</td>
+<td align="center">41.9</td>
+</tr>
+<tr>
+<td align="left">Genome-wide SNP level(%)</td>
+<td align="center">0.19</td>
+<td align="center">0.4</td>
+<td align="center">0.3-0.5</td>
+<td align="center">0.7</td>
+<td align="center">6.5</td>
+</tr>
+<tr>
+<td align="left">Repetitive DNA (%)</td>
+<td align="center">50</td>
+<td align="center">13</td>
+<td align="center">26</td>
+<td align="center">57</td>
+<td align="center">26</td>
+</tr>
+<tr>
+<td align="left">Number of gene models</td>
+<td align="center">29,964</td>
+<td align="center">32,338</td>
+<td align="center">26,789</td>
+<td align="center">22,183</td>
+<td align="center">27,173</td>
+</tr>
+</tbody></table>
+<h2 id="重要问题和结论"><a href="#重要问题和结论" class="headerlink" title="重要问题和结论"></a>重要问题和结论</h2><p>3.1 从基因组的水平上看Aurelia群体之间的分化水平，看与之前报道的CO1与ITS-1的研究结果是否一致：  </p>
+<blockquote>
+<p>The <strong>complete mitochondrial genome</strong> of our organism (contig ‘Seg3751’) shows <strong>99%</strong> similarity to the ‘Aurelia aurita (2)’ mitogenome published by Park et al.   </p>
+</blockquote>
+<blockquote>
+<p><strong>CO1 sequences</strong> of the Californian and Roscoff strains are <strong>~97.8%</strong> identical, while the Californian and Eilat strains are <strong>~81.5%</strong> identical.  </p>
+</blockquote>
+<blockquote>
+<p><strong>amino acid sequences</strong> from the California and Roscoff strains are, on average, <strong>~97.7%</strong> identical, while the California and Eilat strains are <strong>~90.9%</strong> identical.  </p>
+</blockquote>
+<p>那么分化究竟有多大呢，文章举了一个例子：这已经达到超过了了mice和rat的分化水平（平均一致性是95.1%）。  </p>
+<p><strong>结论一：Aurelia群体之间的分化甚至已经超过了很多物种间的分化</strong>   </p>
+<p>3.2 紧接着，作者比较了Aurelia与之前提到的所有物种的保守的直系同源基因 conserved orthologous groups (COGs)<br>OrthoFinder #用这个找的直系同源基因：  </p>
+<p>从数量上：比较水母中与两侧动物共有的而其他的刺胞动物没有的COGs有多少、其中与人共有的有多少……<br>从内容上：列举了重要的通路如FBXO25/FBXO32等在刺细胞动物中是十分保守的  </p>
+<blockquote>
+<p>medusozoans and anthozoans have retained comparable portions of the ancestral cnidarian/bilaterian gene repertoire.</p>
+</blockquote>
+<p><strong>结论二: 刺细胞动物和两侧对称动物有很多共享的COGs，水母类和珊瑚类保留了相当一部分刺胞动物-两侧动物祖先基因</strong>（皱眉，我从图中没有看出来）  </p>
+<h2 id="究竟是什么让水母有一个水母期复杂的生活史呢？后面都是围绕这个问题展开"><a href="#究竟是什么让水母有一个水母期复杂的生活史呢？后面都是围绕这个问题展开" class="headerlink" title="究竟是什么让水母有一个水母期复杂的生活史呢？后面都是围绕这个问题展开"></a>究竟是什么让水母有一个水母期复杂的生活史呢？后面都是围绕这个问题展开</h2><p>4.1 是不是扩张的基因导致的？<strong>基因家族的扩张收缩情况</strong>    </p>
+<p>从数量上：作者比较的是每个物种相对于刺胞动物-两侧动物它们的共同祖先而言，扩张收缩的情况：  </p>
+<blockquote>
+<p>Focusing on orthologue clusters shared between cnidarians and bilaterians, we next traced patterns of gene gain and loss across 8,263 conserved gene families shared in the cnidarian/bilaterian (planulozoan) last common ancestor  </p>
+</blockquote>
+<p>从功能上: 比较水母相对于其他刺细胞动物，显著扩张的基因的功能，以及在不同生活史阶段的表达情况</p>
+<p><strong>结论三：尽管水母显著扩张的这些基因在不同的生活史阶段有不同的表达模式，但从基因组的水平上看，并没有证据表明这些对它复杂的生活史有重要的作用</strong>  </p>
+<blockquote>
+<p>at a genome-wide vantage, there is little evidence that the expansion of conserved genes played an outsized role in the evolution of medusozoan body-plans.   </p>
+</blockquote>
+<p>4.2 与生活史重要相关的基因导致的？<strong>homeobox genes evolution</strong>  </p>
+<p><strong>homeobox genes</strong> — a large clade of transcription factors that share a ~60-peptide DNA-binding homeodomain region—are primary candidates in the study of animal body-plan evolution, and a common starting point when analysing the gene content of early branching animal lineages</p>
+<p>好的，既然看不出什么来，那不然直接从与生活史重要相关的基因来看吧！<br>首先，要尽量多的找到刺胞动物与两侧对称动物最近共同祖先（Planulozoa）的homeobox gene，找到了66个家族，9大类。然后就可以比较每个类别中，水母相对于珊瑚、水螅等homeobox基因的数量    </p>
+<p><strong>结论四：这里，作者发现，珊瑚纲的那几个动物比水母中有更多类别、数量的homeobox gene，尽管水母的生活史更复杂！</strong>  </p>
+<blockquote>
+<p>These results provide a case study where the anthozoan gene repertoire is larger than that of Aurelia, despite the latter’s complex life cycle.  </p>
+</blockquote>
+<p>4.3 会不会是水母特有的基因导致的？ <strong>taxonomically restricted (orphan) genes</strong>  </p>
+<p>作者用 RNA-seq data分析了6个不同生活史阶段的基因差异表达情况。发现，水母特有的基因的表达在整个生活周期中都是很平均的，并没有什么出现上调的趋势。  </p>
+<blockquote>
+<p>genes unique to Aurelia are expressed more or less evenly across the life cycle.</p>
+</blockquote>
+<p>因此得出，<strong>水母期的出现，与新基因是没有关系的，似乎更可能是那些保守基因的重新部署。</strong>这也是文章的中心思想。   </p>
+<blockquote>
+<p>at a transcriptome-wide level, the evolution of novel life stages in Aurelia appears to be the result of redeploying deeply conserved genes as opposed to acquiring new ones.  </p>
+</blockquote>
+<p>##既然提出了假设，接着后面的事情就剩下证明假设了：  </p>
+<p>4.4 证明基因在不同的通路发挥作用   </p>
+<p>作者找到了pan-cnadirian life stage所有的差异表达转录本，拿到里面的所有基因，然后同这个软件<code>STRING v10</code>可以看不同蛋白之间的相互作用，以及富集到的基因网络：  </p>
+<blockquote>
+<p>According to STRING, all clusters contain significantly more protein–protein interactions than expected by chance (protein–protein interaction enrichment P value &gt; 0.05).  </p>
+</blockquote>
+<blockquote>
+<p>These results support the hypothesis that conserved, differentially expressed genes in the medusa life stages are frequently involved in gene networks present in bilaterian animals.  </p>
+</blockquote>
+<p><strong>保守的差异表达基因进化出了不同的基因表达网络</strong>  </p>
+<p><em>我对这里还是有疑问的，因为并没有解释为什么水母出现了水母期，而珊瑚等没有出现？？</em>  </p>
+<p>4.5 眼睛发育蛋白：究竟刺胞动物的眼与两侧对称动物是否是同源？  </p>
+<p><code>QuickGO</code>-找果蝇中与眼睛发育相关的所有蛋白<br><code>STRING</code> -构建这些蛋白相互作用网络<br>用不同的颜色标出这些蛋白在水母中的表达情况  </p>
+<p>果蝇-水母同源的有61%，其中~59%（172）有差异表达，在水母期上调的只有19个。-》<em>这就说明了眼睛的进化是不保守的？？</em>  </p>
+<blockquote>
+<p>These results suggest that proteins involved in Drosophila eye morphogenesis are not uniformly upregulated in Aurelia, and that many aspects of eye development are unlikely to be conserved.</p>
+</blockquote>
+<p>后面的我已经完全看不懂了：  </p>
+<blockquote>
+<p>instead of asking what bilaterian eye-patterning genes are conserved in Aurelia, we asked, what are the functions of putative Aurelia eye-patterning genes in bilaterians?  </p>
+</blockquote>
+<p>找与eye-absent相关的基因？根据果蝇的蛋白组，看水母eye-absent相关的基因的富集？发现富集的基因与神经与复眼的形成相关？然而这些基因在人里面，却与眼睛发育毫不相关？  </p>
+<p>得出结论：**Overall, our results provide intriguing evidence that sensory structures in Aurelia share ‘deep homology’ with bilaterian organs via ancestral multifunctional cell types, and provide a case study for how the Aurelia genome can be queried to study gene regulatory network evolution in animals.</p>
+<p>我没有理解这一段的意思。。首先怎么找eye-absent基因呢？后面的逻辑也没有弄懂，结论也没有看懂。。    </p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>这里感觉，作者（有点小可怜）<br>5.1 没有发现能解释水母有一个复杂的‘水母期’的特别的基因或者通路，因此提出假设：可能是保守的基因进化出不同的pathway？<br>5.2 水母中的感觉器官与两侧动物有‘deep homology’?这里实在没有看懂  </p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>Gold, David A., et al. “The genome of the jellyfish Aurelia and the evolution of animal complexity.” Nature ecology &amp; evolution (2018): 1.</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>flag刚立起来，第一周就倒了。为了赶紧扶起来，所以在图书馆饿着肚子看文章。第一次用这种方式记录自己读的文章，有很多地方理解的还不清楚，写出来的也有可能很多是错的，但是，慢慢来嘛。希望有人可以跟我讨论，给我提出意见和指正！我会再接再厉的！  </p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
+         
+    <div style="text-align:center;color: #ccc;font-size:14px;">
+        ------ END</i>   Thankyou ------</div>
+ 
+
+      </div>
+    
+
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Chen Zeyuan</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/12/16/Jelly_fish/" title="The genome of the jellyfish Aurelia and the evolution of animal complexity">http://yoursite.com/2018/12/16/Jelly_fish/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/genome-evolution/" rel="tag"><i class="fa fa-tag"></i> genome, evolution</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/03/bash.chomd/" rel="next" title="Bash useful operation">
+                <i class="fa fa-chevron-left"></i> Bash useful operation
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/19/lrz_HPC_system/" rel="prev" title="Lrz HPC Systems">
+                Lrz HPC Systems <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://media.giphy.com/media/k4bo0DI2Sbcze/giphy.gif"
+                alt="Chen Zeyuan" />
+            
+              <p class="site-author-name" itemprop="name">Chen Zeyuan</p>
+              <p class="site-description motion-element" itemprop="description">Live, Learn, Feel, Think</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/Arielyuan" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="zeyuan.chen@qq.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/zeyuanchen" target="_blank" title="知乎"><i class="fa fa-fw fa-globe"></i>知乎</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.cnblogs.com/arielyuan" target="_blank" title="博客园"><i class="fa fa-fw fa-globe"></i>博客园</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.itn-ignite.eu/projects/11867_zeyuan-chen" target="_blank" title="Ignite"><i class="fa fa-fw fa-globe"></i>Ignite</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/Arielzyc" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/arielzyc" target="_blank" title="FB Page"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://instagram.com/Arielzyc" target="_blank" title="Instagram"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#研究对象：Aurelia"><span class="nav-number">1.</span> <span class="nav-text">研究对象：Aurelia</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基因组"><span class="nav-number">2.</span> <span class="nav-text">基因组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重要问题和结论"><span class="nav-number">3.</span> <span class="nav-text">重要问题和结论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#究竟是什么让水母有一个水母期复杂的生活史呢？后面都是围绕这个问题展开"><span class="nav-number">4.</span> <span class="nav-text">究竟是什么让水母有一个水母期复杂的生活史呢？后面都是围绕这个问题展开</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">5.</span> <span class="nav-text">小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#写在最后"><span class="nav-number">6.1.</span> <span class="nav-text">写在最后</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+
+  
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chen Zeyuan</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数"></span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长"></span>
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v4.2.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a> v6.4.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '7dNAhGoDhveB0RGnwLOtYCww-gzGzoHsz',
+        appKey: 'GNp0j3DE8ESP9xMhio2UHc0S',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+
