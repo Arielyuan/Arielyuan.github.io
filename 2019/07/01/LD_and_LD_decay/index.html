@@ -116,7 +116,7 @@
 <meta property="og:description" content="连锁不平衡（linkage disequilibrium,LD）是指在某一个群体中，不同座位上两个基因同时遗传的频率明显高于预期的随机频率现象。一般用D，D’ 和 r^2^来表示LD的程度。   D 是LD的基本单位，度量观察到的单倍型频率与平衡状态下期望频率的偏差，算法如下：   D&#x3D;P(AB)-P(A)*P(B);其中：P(AB)表示实际观察到的AB频率，P(A)*P(B)表示AB频率的期望值">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-07-01T10:58:00.000Z">
-<meta property="article:modified_time" content="2020-04-16T16:10:28.920Z">
+<meta property="article:modified_time" content="2020-04-16T16:16:33.042Z">
 <meta property="article:author" content="Chen Zeyuan">
 <meta property="article:tag" content="LD">
 <meta name="twitter:card" content="summary">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-04-17 00:10:28" itemprop="dateModified" datetime="2020-04-17T00:10:28+08:00">2020-04-17</time>
+                <time title="修改时间：2020-04-17 00:16:33" itemprop="dateModified" datetime="2020-04-17T00:16:33+08:00">2020-04-17</time>
               
             
           </span>
@@ -525,8 +525,7 @@
 <p>P(A)=0.75, P(a)=0.25, P(B)=0.5, P(b)=0.5<br>D=0.5-0.75*0.25=0.125<br>D’=0.125/min{0.75*0.5, 0.25*0.5}=1<br>r^2^=0.125*0.125/(0.75*0.25*0.5*0.5)=0.33</p>
 <h5 id="3-完全连锁"><a href="#3-完全连锁" class="headerlink" title="3. 完全连锁"></a>3. 完全连锁</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AB AB AB AB AB AB ab ab ab ab ab ab</span><br></pre></td></tr></table></figure>
 <p>P(A)=0.5, P(a)=0.5, P(B)=0.5, P(b)=0.5<br>D=0.5-0.5*0.5=0.25<br>D’=0.25/min{0.5*0.5, 0.5*0.5}=1<br>r^2^=0.25*0.25/(0.5*0.5*0.5*0.5)=1  </p>
-<h6 id="Reference-https-blog-csdn-net-u014182497-article-details-52788823"><a href="#Reference-https-blog-csdn-net-u014182497-article-details-52788823" class="headerlink" title="Reference: https://blog.csdn.net/u014182497/article/details/52788823"></a>Reference: <a href="https://blog.csdn.net/u014182497/article/details/52788823" target="_blank" rel="noopener">https://blog.csdn.net/u014182497/article/details/52788823</a></h6><hr>
-<h2 id="连锁不平衡的衰减（Linkage-disequilibrium-LD-decay，LD-decay）"><a href="#连锁不平衡的衰减（Linkage-disequilibrium-LD-decay，LD-decay）" class="headerlink" title="连锁不平衡的衰减（Linkage disequilibrium (LD) decay，LD decay）"></a><strong>连锁不平衡的衰减（Linkage disequilibrium (LD) decay，LD decay）</strong></h2><p><strong>LD的衰减</strong>指位点间由连锁不平衡到连锁平衡的演变过程；LD衰减的速度在不同物种间或同物种的不同亚群间，往往差异非常大。所以，通常会使用1个标准——“LD衰减距离”来描述LD衰减速度的快慢。<br><strong>LD衰减距离</strong>通常指的是：当平均LD系数r^2^衰减到一定大小的时候，对应的物理距离。“一定大小”是这个定义的关键点，但没有特别统一的标准，在不同文章中标准不同。常见的标准包括：  </p>
+<h2 id="Reference-https-blog-csdn-net-u014182497-article-details-52788823"><a href="#Reference-https-blog-csdn-net-u014182497-article-details-52788823" class="headerlink" title="Reference: https://blog.csdn.net/u014182497/article/details/52788823"></a>Reference: <a href="https://blog.csdn.net/u014182497/article/details/52788823" target="_blank" rel="noopener">https://blog.csdn.net/u014182497/article/details/52788823</a></h2><h2 id="连锁不平衡的衰减（Linkage-disequilibrium-LD-decay，LD-decay）"><a href="#连锁不平衡的衰减（Linkage-disequilibrium-LD-decay，LD-decay）" class="headerlink" title="连锁不平衡的衰减（Linkage disequilibrium (LD) decay，LD decay）"></a><strong>连锁不平衡的衰减（Linkage disequilibrium (LD) decay，LD decay）</strong></h2><p><strong>LD的衰减</strong>指位点间由连锁不平衡到连锁平衡的演变过程；LD衰减的速度在不同物种间或同物种的不同亚群间，往往差异非常大。所以，通常会使用1个标准——“LD衰减距离”来描述LD衰减速度的快慢。<br><strong>LD衰减距离</strong>通常指的是：当平均LD系数r^2^衰减到一定大小的时候，对应的物理距离。“一定大小”是这个定义的关键点，但没有特别统一的标准，在不同文章中标准不同。常见的标准包括：  </p>
 <ul>
 <li>LD系数降低到最大值的一半；</li>
 <li>LD系数降低到0.5以下；</li>
@@ -544,8 +543,7 @@
 <li>辅助分析进化与选择<br>在同一个连锁群上，LD衰减的慢说明该群体受到选择。一般来说，<strong>野生群体比驯化改良群体LD衰减快</strong>，<strong>异花授粉植物比自花授粉植物LD衰减快</strong>。比如玉米：地方品种1kb，自交系2kb，商用自交系100kb。  </li>
 </ul>
 <h2 id="单体型块（Haplotype-Block）"><a href="#单体型块（Haplotype-Block）" class="headerlink" title="单体型块（Haplotype Block）"></a><strong>单体型块（Haplotype Block）</strong></h2><p>单体型块，即<strong>连锁不平衡区域</strong>，是指同一条染色体上处于连锁不平衡状态的一段连续的区域。单体型块分析可以用于筛选tag SNP、确定候选基因的范围等。<br>如果GWAS检测到显著关联的区间，可以通过进一步绘制局部的LD单体型块图，来进一步判断<strong>显著相关的SNP和目标基因间是否存在强LD关系</strong>。    </p>
-<h6 id="Reference-http-www-sohu-com-a-234594093-761120"><a href="#Reference-http-www-sohu-com-a-234594093-761120" class="headerlink" title="Reference: http://www.sohu.com/a/234594093_761120"></a>Reference: <a href="http://www.sohu.com/a/234594093_761120" target="_blank" rel="noopener">http://www.sohu.com/a/234594093_761120</a></h6><hr>
-<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><h3 id="PopLDdecay"><a href="#PopLDdecay" class="headerlink" title="PopLDdecay"></a><a href="https://github.com/BGI-shenzhen/PopLDdecay" target="_blank" rel="noopener">PopLDdecay</a></h3><ul>
+<h2 id="Reference-http-www-sohu-com-a-234594093-761120"><a href="#Reference-http-www-sohu-com-a-234594093-761120" class="headerlink" title="Reference: http://www.sohu.com/a/234594093_761120"></a>Reference: <a href="http://www.sohu.com/a/234594093_761120" target="_blank" rel="noopener">http://www.sohu.com/a/234594093_761120</a></h2><h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><h3 id="PopLDdecay"><a href="#PopLDdecay" class="headerlink" title="PopLDdecay"></a><a href="https://github.com/BGI-shenzhen/PopLDdecay" target="_blank" rel="noopener">PopLDdecay</a></h3><ul>
 <li>支持直接读取 VCF 文件    </li>
 <li>输出文件非常节省空间    </li>
 <li>计算时间相对较短  </li>
@@ -564,7 +562,8 @@
 <li>需要准备.ped 和 infor文件  </li>
 </ul>
 <p><em><a href="https://academic.oup.com/bioinformatics/article/21/2/263/186662" target="_blank" rel="noopener">Haploview: analysis and visualization of LD and haplotype maps</a></em><br>参数详细介绍：<a href="https://www.worthfo.com/p/778390/" target="_blank" rel="noopener">https://www.worthfo.com/p/778390/</a>  </p>
-<h6 id="Reference-http-blog-sciencenet-cn-blog-656335-1168505-html"><a href="#Reference-http-blog-sciencenet-cn-blog-656335-1168505-html" class="headerlink" title="Reference: http://blog.sciencenet.cn/blog-656335-1168505.html"></a>Reference: <a href="http://blog.sciencenet.cn/blog-656335-1168505.html" target="_blank" rel="noopener">http://blog.sciencenet.cn/blog-656335-1168505.html</a></h6>
+<p>Reference: <a href="http://blog.sciencenet.cn/blog-656335-1168505.html" target="_blank" rel="noopener">http://blog.sciencenet.cn/blog-656335-1168505.html</a>  </p>
+
       
     </div>
 
@@ -632,8 +631,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/03/16/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2020/03/16/ignite/" rel="prev" title="IGNITE SOURCES">
+                IGNITE SOURCES <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -711,7 +710,7 @@
                 
                   <a href="/archives/%20%7C%7C%20archive">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -855,7 +854,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#连锁不平衡（linkage-disequilibrium-LD）"><span class="nav-number">1.</span> <span class="nav-text">连锁不平衡（linkage disequilibrium,LD）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.1.</span> <span class="nav-text">summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example"><span class="nav-number">1.2.</span> <span class="nav-text">example</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-完全平衡"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">1. 完全平衡</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-部分连锁"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">2. 部分连锁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-完全连锁"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">3. 完全连锁</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Reference-https-blog-csdn-net-u014182497-article-details-52788823"><span class="nav-number">1.2.0.3.1.</span> <span class="nav-text">Reference: https:&#x2F;&#x2F;blog.csdn.net&#x2F;u014182497&#x2F;article&#x2F;details&#x2F;52788823</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连锁不平衡的衰减（Linkage-disequilibrium-LD-decay，LD-decay）"><span class="nav-number">2.</span> <span class="nav-text">连锁不平衡的衰减（Linkage disequilibrium (LD) decay，LD decay）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单体型块（Haplotype-Block）"><span class="nav-number">3.</span> <span class="nav-text">单体型块（Haplotype Block）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Reference-http-www-sohu-com-a-234594093-761120"><span class="nav-number">3.0.0.0.1.</span> <span class="nav-text">Reference: http:&#x2F;&#x2F;www.sohu.com&#x2F;a&#x2F;234594093_761120</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件"><span class="nav-number">4.</span> <span class="nav-text">软件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PopLDdecay"><span class="nav-number">4.1.</span> <span class="nav-text">PopLDdecay</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Plink"><span class="nav-number">4.2.</span> <span class="nav-text">Plink</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Haploview"><span class="nav-number">4.3.</span> <span class="nav-text">Haploview</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Reference-http-blog-sciencenet-cn-blog-656335-1168505-html"><span class="nav-number">4.3.0.0.1.</span> <span class="nav-text">Reference: http:&#x2F;&#x2F;blog.sciencenet.cn&#x2F;blog-656335-1168505.html</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#连锁不平衡（linkage-disequilibrium-LD）"><span class="nav-number">1.</span> <span class="nav-text">连锁不平衡（linkage disequilibrium,LD）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.1.</span> <span class="nav-text">summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example"><span class="nav-number">1.2.</span> <span class="nav-text">example</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-完全平衡"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">1. 完全平衡</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-部分连锁"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">2. 部分连锁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-完全连锁"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">3. 完全连锁</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference-https-blog-csdn-net-u014182497-article-details-52788823"><span class="nav-number">2.</span> <span class="nav-text">Reference: https:&#x2F;&#x2F;blog.csdn.net&#x2F;u014182497&#x2F;article&#x2F;details&#x2F;52788823</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连锁不平衡的衰减（Linkage-disequilibrium-LD-decay，LD-decay）"><span class="nav-number">3.</span> <span class="nav-text">连锁不平衡的衰减（Linkage disequilibrium (LD) decay，LD decay）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单体型块（Haplotype-Block）"><span class="nav-number">4.</span> <span class="nav-text">单体型块（Haplotype Block）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference-http-www-sohu-com-a-234594093-761120"><span class="nav-number">5.</span> <span class="nav-text">Reference: http:&#x2F;&#x2F;www.sohu.com&#x2F;a&#x2F;234594093_761120</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件"><span class="nav-number">6.</span> <span class="nav-text">软件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PopLDdecay"><span class="nav-number">6.1.</span> <span class="nav-text">PopLDdecay</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Plink"><span class="nav-number">6.2.</span> <span class="nav-text">Plink</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Haploview"><span class="nav-number">6.3.</span> <span class="nav-text">Haploview</span></a></li></ol></li></ol></div>
             
 
           </div>
